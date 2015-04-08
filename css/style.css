@@ -88,6 +88,42 @@ table {
     display: none;
   }
 }*/
+.container {
+  width: 960px;
+  background: transparent;
+  overflow: hidden; }
+
+.col1, .col2, .col3, .col4, .col5, .col6 {
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 20px; }
+
+@media screen and (min-width: 500px) {
+  .col4 {
+    width: 306.668px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box; }
+
+  .col6 {
+    width: 470.002px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box; }
+
+  div:last-of-type {
+    margin-right: 0; } }
 html {
   box-sizing: border-box; }
 
@@ -108,13 +144,13 @@ body {
   border: 10px #dbf235 solid; }
 
 .wrapper {
-  width: 80%; }
+  width: 80%;
+  margin: 0 auto; }
 
 a {
   text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "proxima-nova-alt-condensed";
   font-family: "proxima-nova-alt-condensed",sans-serif;
   font-size: 1.5rem;
   font-weight: 700; }
@@ -125,15 +161,66 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   text-align: center;
   font-style: italic;
-  font-size: 2rem; }
+  font-size: 3rem;
+  padding-top: 4rem; }
 
-.click h5 {
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0; }
+
+.nav-toggle {
+  float: left;
+  background: white;
+  color: black;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 1.2rem; }
+  .nav-toggle:hover {
+    background: #dbf235; }
+
+.click li {
   float: right;
   background: white;
-  padding: 10px; }
+  padding: 15px;
+  font-weight: 700;
+  font-size: 1.2rem; }
+  .click li a {
+    color: black; }
+  .click li:nth-of-type(1) {
+    background: black; }
+    .click li:nth-of-type(1) a {
+      color: white; }
 
 .main {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/gulls.JPG") no-repeat center center;
   background-size: cover; }
+
+.anniversary {
+  margin-top: 4rem;
+  width: 110px;
+  height: 110px;
+  background: #51dad0;
+  text-align: center;
+  font-family: "proxima-nova-alt-condensed";
+  font-size: 1.3rem;
+  line-height: 1;
+  padding-top: 10px;
+  float: left;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%; }
+  .anniversary span {
+    font-size: 3rem; }
+
+.issue {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)); }
+  .issue p {
+    font-size: 1.2rem;
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
