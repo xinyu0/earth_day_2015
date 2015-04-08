@@ -1,6 +1,7 @@
-@import "../bourbon/bourbon";
 @import "reset";
 @import "responsive-nav";
+@import "../bourbon/bourbon";
+
 
 // color
 
@@ -9,19 +10,40 @@ $primary-color2: rgba(232, 244, 9, .4);
 $secondary-color: #51dad0;
 $secondary-color2: rgba(81, 218, 208, .5);
 $link-color: #51dad0;
-$date-color:#ed6976;
+$date-color:#fd4857;
+$description-color: rgba(255, 255, 255, .5);
 
 $header-color: #51dad0;
 
+$body-font: "proxima-nova-soft";
+$header-font: "proxima-nova-extra-condensed";
+$header-font2: "proxima-nova-alt-condensed";
 // media query
 
 $global:400px;
 $medium:800px;
 $large:960px;
 
+@import "animation";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body { 
+	font-family: "proxima-nova-soft",sans-serif;
+	line-height: 1.5;
+	background: $primary-color url(blossoms.jpg) no-repeat bottom right; 
+	font-size: 1rem;
+	}
+
+
 // grids
-$col: 61.667px;
-$gut: 20px;
+$col: 6%;
+$gut: 2.54%;
 
 @mixin grid($cnum) {
   width: ($col*$cnum)+($gut*(($cnum)-1));
@@ -29,19 +51,13 @@ $gut: 20px;
   height: 100px;
   float: left;
   margin-right: $gut;
-  margin-bottom: 5px;
+  margin-bottom: 3rem;
   text-align: center;
-  padding: 40px;
+  // padding: 40px;
   box-sizing:border-box;
   // color: #eeeeee;
 }
 
-
-.container {
-  width: $large;
-  background: transparent;
-  overflow: hidden;
-}
 
 .col1, .col2, .col3, .col4, .col5, .col6 { 
     width:100%;
@@ -50,10 +66,14 @@ $gut: 20px;
     margin-bottom: 5px;
     text-align: center;
     padding: 20px;
+    border: 10px white solid;
 }
 
 @media screen and (min-width: 500px) {
 
+.col2 {
+  @include grid(2);
+}
 .col4 {
   @include grid(4);
 }
@@ -71,40 +91,20 @@ div:last-of-type {
 // end grids
 
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
-html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font-family: "proxima-nova-soft",sans-serif;
-	line-height: 1.5;
-	background: $primary-color url(blossoms.jpg) no-repeat bottom right; 
-	font-size: 1rem;
-	}
-
-.border {
-	border: 10px $primary-color solid;
-}
 
 .wrapper { 
 	width:80%;
-	margin: 0 auto;
+	margin:0 10%;
 }
 
 a {text-decoration: none;}
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: "proxima-nova-alt-condensed",sans-serif;
+	font-family: $header-font,sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
-	
+	letter-spacing: 0.15em;
 	a {
 		text-decoration: none;
 		color: black;
@@ -114,35 +114,63 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
 	text-align: center;
-	font-style: italic;
+	// font-style: italic;
 	font-size: 3rem;
-	padding-top: 4rem;
+	padding: 8rem 0;
 	// clear:both;
 }
 
 h2 {
 	font-size: 2rem;
-	padding:1rem 0;
+	padding-top:1rem;
+	clear: both;
 }
 
 .nav-toggle {
 	float:left;
 	background: white;
+	font-family: $header-font;
+	
 	color: black;
 	padding:15px;
 	font-weight: 700;
-	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	line-height: 46px;
+	// font-size: 1.2rem;
 	&:hover {
 		background: $primary-color;
+		-webkit-transition: all 1s ease; 
+	-moz-transition: all 1s ease; 
+	-o-transition: all 1s ease; 
+	transition: all 1s ease; 
 	}
+	
+}
+
+.nav-collapse {
+	li {
+		padding: 15px;
+		width: 100%;
+		a {
+		color: black;
+		font-weight: 700;
+		text-align: center;
+
+	}
+	}
+	
 }
 
 .click li {
+	// position: fixed;
+	// right:100px;
+	// top:10px;
 	float:right;
 	background: white;
 	padding:15px;
 	font-weight: 700;
-	font-size: 1.2rem;
+	// font-size: 1.2rem;
 	a {
 		color: black;
 	}
@@ -162,35 +190,172 @@ h2 {
 }
 
 .anniversary {
-	margin-top: 4rem;
-	width:110px;
-	height: 110px;
+	margin-top: 8rem;
+	width:150px;
+	height: 150px;
 	background: $secondary-color;
 	text-align: center;
-	font-family: "proxima-nova-alt-condensed";
-	font-size: 1.3rem;
+	font-family: $header-font;
+	text-transform: uppercase;
+	font-size: 1.2rem;
 	line-height: 1;
 	padding-top: 10px;
+	letter-spacing: 0.15em;
 	float: left;
+	padding: 1.5rem;
 	// font-weight: 700;
 	@include border-top-radius(50%);
 	@include border-right-radius(50%);
 	@include border-bottom-radius(50%);
 	@include border-left-radius(50%);
 	span {
-		font-size:3rem;
+		font-size:3.5rem;
 	
 	}
 }
 
 .issue {
-	background: linear-gradient($secondary-color2, $secondary-color2);
+	background: linear-gradient($primary-color2, $primary-color2);
+	padding-bottom: 2rem;
 	p {
-		font-size: 1.2rem;
+		// font-size: 1.2rem;
 		font-weight: 700;
+		font-size: 1.2;
+		letter-spacing: 0.05em;
 	}
+}
+
+.border {
+	border: 10px $primary-color solid;
+}
+
+
+
+// .button {
+// 	background: white;
+// 	padding:15px;
+// 	font-weight: 700;
+// 	float: right;
+// 	text-align: center;
+
+// }
+
+.top {
+	background: $primary-color;
+	padding:15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	text-align: center;
+	position: fixed;
+	bottom: 10px;
+	right:10px;
+}
+
+.program_event {
+	background: $secondary-color2;
+}
+
+.date {
+	background: $date-color;
+	color: white;
+	width:70px;
+	height: 70px;
+	font-size:1.2rem;
+	font-family: $header-font;
+	float: right;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	text-align: center;
+	@include border-top-radius(50%);
+	@include border-right-radius(50%);
+	@include border-bottom-radius(50%);
+	@include border-left-radius(50%);
+	margin-right: -50px;
+	margin-top: -50px;
+}
+
+.description {
+	background: white;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	vertical-align: bottom;
+	font-family: $header-font;
+	font-weight: 700;
+	width: 100%;
+	margin-top: 200px;
+	padding:10px;
+}
+
+.program1, .program2, .program3, .program4 {
+	padding-top: 2rem;
+	height:300px;
+}
+
+
+.program1 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program1.JPG") no-repeat center center;
+	background-size:cover;
+}
+
+.program2 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program2.JPG") no-repeat center center;
+	background-size:cover;
+}
+
+.program3 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program3.JPG") no-repeat center center;
+	background-size:cover;
+}
+
+ .partner {
+
+ 	@include border-top-radius(50%);
+	@include border-right-radius(50%);
+	@include border-bottom-radius(50%);
+	@include border-left-radius(50%);
+ }
+
+.partner1 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner1.JPG") no-repeat center center;
+	background-size:cover;
+}
+
+.partner2 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner2.JPG") no-repeat center center;
+	background-size:cover;
+}
+
+.partner3 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner3.png") no-repeat center center;
+	background-size:cover;
+}
+
+.partner4 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner4.png") no-repeat center center;
+	background-size:cover;
+}
+
+.partner5 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner5.png") no-repeat center center;
+	background-size:cover;
+}
+
+.partner6 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner6.JPG") no-repeat center center;
+	background-size:cover;
+}
+
+
+
+footer {
+	clear:both;
+	background: $secondary-color;
+	overflow: hidden;
+	height: 200px;
 }
 
 // * {
 // 	border: 1px solid red;
 // }
+
