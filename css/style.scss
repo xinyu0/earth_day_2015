@@ -356,7 +356,7 @@ h3 {
 
 .pastdescription {
 	// background: white;
-	color: black;
+	color: $primary-color;
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
 	vertical-align: center;
@@ -365,7 +365,7 @@ h3 {
 	width: 100%;
 	margin-top: 40%;
 	padding:10px;
-	font-size: 2rem;
+	font-size: 3rem;
 
 }
 
@@ -481,27 +481,25 @@ footer {
 
 .past1, .past2, .past3, .past4 {
 	padding-top: 2rem;
-	height:300px;
+	width:250px;
+	height:250px;
 	@include border-top-radius(50%);
 	@include border-right-radius(50%);
 	@include border-bottom-radius(50%);
 	@include border-left-radius(50%);
 	&:hover {
-		border:10px $primary-color solid;
-		-webkit-transition: all 1s ease; 
-	-moz-transition: all 1s ease; 
-	-o-transition: all 1s ease; 
-	transition: all 1s ease;
+		
 		.pastdescription {
-			// background: $primary-color;
-			font-size: 3rem;
-			-webkit-transition: all 1s ease; 
-	-moz-transition: all 1s ease; 
-	-o-transition: all 1s ease; 
-	transition: all 1s ease;
-
-
-		}
+	-webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
+	}
 	}
 
 }
@@ -518,6 +516,11 @@ footer {
 }
 
 .past3 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program3.JPG") no-repeat center center;
+	background-size:cover;
+}
+
+.past4 {
 	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program3.JPG") no-repeat center center;
 	background-size:cover;
 }

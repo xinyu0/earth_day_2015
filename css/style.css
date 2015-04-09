@@ -345,7 +345,7 @@ h3 {
   padding: 10px; }
 
 .pastdescription {
-  color: black;
+  color: #dbf235;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   vertical-align: center;
@@ -354,7 +354,7 @@ h3 {
   width: 100%;
   margin-top: 40%;
   padding: 10px;
-  font-size: 2rem; }
+  font-size: 3rem; }
 
 .program1, .program2, .program3, .program4 {
   padding-top: 2rem;
@@ -443,7 +443,8 @@ footer {
 
 .past1, .past2, .past3, .past4 {
   padding-top: 2rem;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -452,18 +453,16 @@ footer {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%; }
-  .past1:hover, .past2:hover, .past3:hover, .past4:hover {
-    border: 10px #dbf235 solid;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease; }
-    .past1:hover .pastdescription, .past2:hover .pastdescription, .past3:hover .pastdescription, .past4:hover .pastdescription {
-      font-size: 3rem;
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      transition: all 1s ease; }
+  .past1:hover .pastdescription, .past2:hover .pastdescription, .past3:hover .pastdescription, .past4:hover .pastdescription {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
 
 .past1 {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.JPG") no-repeat center center;
@@ -474,6 +473,10 @@ footer {
   background-size: cover; }
 
 .past3 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
+  background-size: cover; }
+
+.past4 {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
   background-size: cover; }
 
