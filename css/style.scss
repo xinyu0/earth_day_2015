@@ -84,6 +84,10 @@ $gut: 2.54%;
 .col2 {
   @include grid(2);
 }
+.col3 {
+  @include grid(3);
+}
+
 .col4 {
   @include grid(4);
 }
@@ -145,9 +149,13 @@ h2 {
 	clear: both;
 }
 
+
+
 h3 {
 	text-transform: uppercase;
 }
+
+
 
 .nav-toggle {
 	float:left;
@@ -242,8 +250,8 @@ h3 {
 	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/gulls.JPG") no-repeat center center;
 	background-size:cover;
 	// background-attachment: fixed;
-
 }
+
 
 .anniversary {
 	margin-top: 8rem;
@@ -345,6 +353,22 @@ h3 {
 	padding:10px;
 
 }
+
+.pastdescription {
+	// background: white;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	vertical-align: center;
+	font-family: $header-font;
+	font-weight: 700;
+	width: 100%;
+	margin-top: 40%;
+	padding:10px;
+	font-size: 2rem;
+
+}
+
 
 .program1, .program2, .program3, .program4 {
 	padding-top: 2rem;
@@ -455,6 +479,48 @@ footer {
 	height: 40px;
 }
 
+.past1, .past2, .past3, .past4 {
+	padding-top: 2rem;
+	height:300px;
+	@include border-top-radius(50%);
+	@include border-right-radius(50%);
+	@include border-bottom-radius(50%);
+	@include border-left-radius(50%);
+	&:hover {
+		border:10px $primary-color solid;
+		-webkit-transition: all 1s ease; 
+	-moz-transition: all 1s ease; 
+	-o-transition: all 1s ease; 
+	transition: all 1s ease;
+		.pastdescription {
+			// background: $primary-color;
+			font-size: 3rem;
+			-webkit-transition: all 1s ease; 
+	-moz-transition: all 1s ease; 
+	-o-transition: all 1s ease; 
+	transition: all 1s ease;
+
+
+		}
+	}
+
+}
+
+
+.past1 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program1.JPG") no-repeat center center;
+	background-size:cover;
+}
+
+.past2 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program2.JPG") no-repeat center center;
+	background-size:cover;
+}
+
+.past3 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program3.JPG") no-repeat center center;
+	background-size:cover;
+}
 @import "animation";
 
 // * {

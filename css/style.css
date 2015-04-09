@@ -126,6 +126,15 @@ body {
     text-align: center;
     box-sizing: border-box; }
 
+  .col3 {
+    width: 23.08%;
+    height: 100px;
+    float: left;
+    margin-right: 2.54%;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-sizing: border-box; }
+
   .col4 {
     width: 31.62%;
     height: 100px;
@@ -335,6 +344,18 @@ h3 {
   margin-top: 200px;
   padding: 10px; }
 
+.pastdescription {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  vertical-align: center;
+  font-family: "proxima-nova-extra-condensed";
+  font-weight: 700;
+  width: 100%;
+  margin-top: 40%;
+  padding: 10px;
+  font-size: 2rem; }
+
 .program1, .program2, .program3, .program4 {
   padding-top: 2rem;
   height: 300px; }
@@ -419,6 +440,42 @@ footer {
 #signup {
   width: 100%;
   height: 40px; }
+
+.past1, .past2, .past3, .past4 {
+  padding-top: 2rem;
+  height: 300px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%; }
+  .past1:hover, .past2:hover, .past3:hover, .past4:hover {
+    border: 10px #dbf235 solid;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
+    .past1:hover .pastdescription, .past2:hover .pastdescription, .past3:hover .pastdescription, .past4:hover .pastdescription {
+      font-size: 3rem;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease; }
+
+.past1 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.JPG") no-repeat center center;
+  background-size: cover; }
+
+.past2 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.JPG") no-repeat center center;
+  background-size: cover; }
+
+.past3 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
+  background-size: cover; }
 
 /* ====================================   
    .link
