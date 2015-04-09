@@ -88,12 +88,344 @@ table {
     display: none;
   }
 }*/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: "proxima-nova-soft",sans-serif;
+  line-height: 1.5;
+  background: #dbf235 url(blossoms.jpg) no-repeat bottom right;
+  font-size: 1rem; }
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col6e {
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 20px;
+  border: 10px white solid; }
+
+.col6f {
+  width: 100%;
+  background: transparent;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 20px; }
+
+@media screen and (min-width: 500px) {
+  .col2 {
+    width: 14.54%;
+    height: 100px;
+    float: left;
+    margin-right: 2.54%;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-sizing: border-box; }
+
+  .col4 {
+    width: 31.62%;
+    height: 100px;
+    float: left;
+    margin-right: 2.54%;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-sizing: border-box; }
+
+  .col6 {
+    width: 48.7%;
+    height: 100px;
+    float: left;
+    margin-right: 2.54%;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-sizing: border-box; }
+
+  .col6e {
+    width: 48.7%;
+    height: 100px;
+    float: left;
+    margin-right: 2.54%;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-sizing: border-box; }
+
+  .col6f {
+    width: 48.7%;
+    height: 100px;
+    float: left;
+    margin-right: 2.54%;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-sizing: border-box; }
+
+  div:last-of-type {
+    margin-right: 0; } }
+.wrapper {
+  width: 80%;
+  margin: 0 10%; }
+
+a {
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "proxima-nova-extra-condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.15em; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    text-decoration: none;
+    color: black; }
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 8rem 0; }
+
+h2 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  clear: both; }
+
+h3 {
+  text-transform: uppercase; }
+
+.nav-toggle {
+  float: left;
+  background: white;
+  font-family: "proxima-nova-extra-condensed";
+  color: black;
+  padding: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  line-height: 46px; }
+  .nav-toggle:hover {
+    background: #dbf235;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
+
+.nav-collapse li {
+  padding: 25.8px 0;
+  width: 100%;
+  text-align: center; }
+  .nav-collapse li a {
+    color: black;
+    font-weight: 700;
+    font-family: "proxima-nova-extra-condensed";
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em; }
+
+@media screen and (min-width: 625px) {
+  .nav-collapse li {
+    width: 100px;
+    display: inline-block; } }
+.click li {
+  float: right;
+  background: white;
+  padding: 15px;
+  font-weight: 700; }
+  .click li a {
+    color: black; }
+  .click li:nth-of-type(1) {
+    background: black; }
+    .click li:nth-of-type(1) a {
+      color: white; }
+
+.involved li {
+  float: right;
+  background: white;
+  padding: 15px;
+  font-weight: 700; }
+  .involved li a {
+    color: black; }
+
+.main {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/gulls.JPG") no-repeat center center;
+  background-size: cover; }
+
+.anniversary {
+  margin-top: 8rem;
+  width: 150px;
+  height: 150px;
+  background: #51dad0;
+  text-align: center;
+  font-family: "proxima-nova-extra-condensed";
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-top: 10px;
+  letter-spacing: 0.15em;
+  float: left;
+  padding: 1.5rem;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%; }
+  .anniversary span {
+    font-size: 3.5rem; }
+
+.issue {
+  background: linear-gradient(rgba(232, 244, 9, 0.4), rgba(232, 244, 9, 0.4));
+  padding-bottom: 2rem; }
+  .issue p {
+    font-weight: 700;
+    font-size: 1.2;
+    letter-spacing: 0.05em; }
+
+.border {
+  border: 10px #dbf235 solid; }
+
+.top {
+  background: #dbf235;
+  padding: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
+
+.program {
+  background: rgba(81, 218, 208, 0.5);
+  overflow: hidden;
+  clear: both; }
+
+.date {
+  background: #fd4857;
+  color: white;
+  width: 70px;
+  height: 70px;
+  font-size: 1.2rem;
+  font-family: "proxima-nova-extra-condensed";
+  float: right;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  margin-right: -50px;
+  margin-top: -50px; }
+
+.description {
+  background: white;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  vertical-align: bottom;
+  font-family: "proxima-nova-extra-condensed";
+  font-weight: 700;
+  width: 100%;
+  margin-top: 200px;
+  padding: 10px; }
+
+.program1, .program2, .program3, .program4 {
+  padding-top: 2rem;
+  height: 300px; }
+  .program1:hover, .program2:hover, .program3:hover, .program4:hover {
+    border: 10px #dbf235 solid;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
+    .program1:hover .description, .program2:hover .description, .program3:hover .description, .program4:hover .description {
+      background: #dbf235;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease; }
+
+.program1 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.JPG") no-repeat center center;
+  background-size: cover; }
+
+.program2 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.JPG") no-repeat center center;
+  background-size: cover; }
+
+.program3 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
+  background-size: cover; }
+
+.partner {
+  width: 100px;
+  height: 100px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%; }
+
+.partner1 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner1.JPG") no-repeat center center;
+  background-size: cover; }
+
+.partner2 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner2.JPG") no-repeat center center;
+  background-size: cover; }
+
+.partner3 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner3.png") no-repeat center center;
+  background-size: cover; }
+
+.partner4 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner4.png") no-repeat center center;
+  background-size: cover; }
+
+.partner5 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner5.png") no-repeat center center;
+  background-size: cover; }
+
+.partner6 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner6.JPG") no-repeat center center;
+  background-size: cover; }
+
+footer {
+  clear: both;
+  background: rgba(81, 218, 208, 0.5);
+  overflow: hidden;
+  height: 200px; }
+  footer nav {
+    font-family: "proxima-nova-extra-condensed";
+    text-transform: uppercase;
+    font-size: 1.2rem; }
+    footer nav li {
+      float: left;
+      padding: 5px; }
+  footer p {
+    width: 100%;
+    text-align: center;
+    clear: both; }
+
+#signup {
+  width: 100%;
+  height: 40px; }
+
 /* ====================================   
    .link
    ==================================== */
 .link {
   text-align: center;
-  margin: 50px 0 0; }
+  margin: 20px 0 0; }
 
 .link a.btn {
   color: #222;
@@ -192,27 +524,12 @@ table {
   transform: translate(0px, -5px); }
 
 /* ==============================   
-   #header .navArea
+   .navArea
    ============================== */
-#header .navArea {
-  position: absolute;
-  top: 41px;
-  right: 130px;
-  left: 270px;
-  display: block;
-  text-align: right;
-  z-index: 2; }
-
-#header .navArea ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0; }
-
 /*#header .navArea ul li { display: inline-block; *display: inline;*zoom: 1;}
 #header .navArea ul li a { display: block; padding: 0 15px; color: #222; font-size: 14px; font-family: "futura-pt", sans-serif; font-weight: 700; line-height: 40px; letter-spacing: 0.1em; text-decoration: none; text-transform: uppercase; position:relative; }
 
-#header .navArea ul li a:before { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; display: block; border-left: #71cdd8 2px solid; border-right: #f7b7c5 2px solid; content: ""; z-index: 2; webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform: scale(1, 0); -moz-transform: scale(1, 0); -o-transform: scale(1, 0); -ms-transform: scale(1, 0); transform: scale(1, 0); }
+#header .navArea ul li a:before { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; display: block; border-left: #71cdd8 2px solid; border-right: $primary-color 2px solid; content: ""; z-index: 2; webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform: scale(1, 0); -moz-transform: scale(1, 0); -o-transform: scale(1, 0); -ms-transform: scale(1, 0); transform: scale(1, 0); }
 #header .navArea ul li a:after { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; display: block; border: #e8f409 2px solid; border-left: none; border-right: none; content: ""; z-index: 2; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; -webkit-transform: scale(0, 1); -moz-transform: scale(0, 1); -o-transform: scale(0, 1); -ms-transform: scale(0, 1); transform: scale(0, 1); }
 #header .navArea ul li a:hover:before,
 #header .navArea ul li a:hover:after { -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }*/
@@ -293,25 +610,21 @@ table {
 socialmedia
    ============================== */
 .socialmedia {
+  width: 100%;
   display: block;
   text-align: right;
-  z-index: 2; }
+  z-index: 2;
+  margin: 20px auto; }
 
 .socialmedia ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-size: 0; }
 
-.snsArea ul li {
-  float: left;
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  margin: 0 0 0 6px; }
-
-.socialmedia ul li:first-child {
-  margin: 0; }
+.socialmedia ul li {
+  margin: 0 10px;
+  display: inline-block; }
 
 .socialmedia ul li a {
   width: 50px;
@@ -328,31 +641,55 @@ socialmedia
   border-radius: 50%; }
 
 .socialmedia ul li a.fb {
-  background: url("../image/facebook.svg");
+  background: url("../image/facebook.svg") center center no-repeat, #51dad0;
+  background-size: 30px;
   font-size: 14px; }
+  .socialmedia ul li a.fb:hover {
+    background: url("../image/facebook.svg") center center no-repeat, #dbf235;
+    background-size: 30px;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
 
 .socialmedia ul li a.tw {
-  background: url("../image/twitter.svg");
+  background: url("../image/twitter.svg") center center no-repeat, #51dad0;
+  background-size: 30px;
   font-size: 14px; }
+  .socialmedia ul li a.tw:hover {
+    background: url("../image/twitter.svg") center center no-repeat, #dbf235;
+    background-size: 30px;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
 
 .socialmedia ul li a.yt {
-  background: url("../image/youtube.svg");
+  background: url("../image/youtube.svg") center center no-repeat, #51dad0;
+  background-size: 30px;
   font-size: 14px; }
-
-.socialmedia ul li a:hover {
-  color: #222;
-  background: #e8f409;
-  color: #fefefe;
-  background: #f7b7c5;
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  .socialmedia ul li a.yt:hover {
+    background: url("../image/youtube.svg") center center no-repeat, #dbf235;
+    background-size: 30px;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
 
 /* ----- .transition ----- */
 .transition03 {
@@ -434,261 +771,78 @@ socialmedia
   color: black;
   background: transparent; }
 
-html {
-  box-sizing: border-box; }
+.eventbtn ul li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
 
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-body {
-  font-family: "proxima-nova-soft",sans-serif;
-  line-height: 1.5;
-  background: #dbf235 url(blossoms.jpg) no-repeat bottom right;
-  font-size: 1rem; }
-
-.col1, .col2, .col3, .col4, .col5, .col6 {
-  width: 100%;
-  height: 100px;
-  background: transparent;
-  margin-bottom: 5px;
-  text-align: center;
-  padding: 20px;
-  border: 10px white solid; }
-
-@media screen and (min-width: 500px) {
-  .col2 {
-    width: 14.54%;
-    height: 100px;
-    float: left;
-    margin-right: 2.54%;
-    margin-bottom: 3rem;
-    text-align: center;
-    box-sizing: border-box; }
-
-  .col4 {
-    width: 31.62%;
-    height: 100px;
-    float: left;
-    margin-right: 2.54%;
-    margin-bottom: 3rem;
-    text-align: center;
-    box-sizing: border-box; }
-
-  .col6 {
-    width: 48.7%;
-    height: 100px;
-    float: left;
-    margin-right: 2.54%;
-    margin-bottom: 3rem;
-    text-align: center;
-    box-sizing: border-box; }
-
-  div:last-of-type {
-    margin-right: 0; } }
-.wrapper {
-  width: 80%;
-  margin: 0 10%; }
-
-a {
-  text-decoration: none; }
-
-h1, h2, h3, h4, h5, h6 {
+.eventbtn ul li a {
+  display: block;
+  color: #222;
   font-family: "proxima-nova-extra-condensed", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 0.15em; }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    text-decoration: none;
-    color: black; }
+  line-height: 50px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden; }
 
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  padding: 8rem 0; }
+.eventbtn ul li a:before {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  border-bottom: white 2px solid;
+  content: "";
+  z-index: 2;
+  webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translate(-100%, 0px);
+  -moz-transform: translate(-100%, 0px);
+  -o-transform: translate(-100%, 0px);
+  -ms-transform: translate(-100%, 0px);
+  transform: translate(-100%, 0px); }
 
-h2 {
-  font-size: 2rem;
-  padding-top: 1rem;
-  clear: both; }
+.eventbtn ul li a:hover:before {
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%); }
 
-.nav-toggle {
-  float: left;
-  background: white;
-  font-family: "proxima-nova-extra-condensed";
+.eventbtn ul li a:after {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  left: 0;
+  display: block;
+  border-bottom: white 2px solid;
+  content: "";
+  z-index: 2;
+  webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(100%, 0px);
+  -moz-transform: translate(100%, 0px);
+  -o-transform: translate(100%, 0px);
+  -ms-transform: translate(100%, 0px);
+  transform: translate(100%, 0px); }
+
+.eventbtn ul li a:hover:after {
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%); }
+
+.eventbtn ul li a:hover {
   color: black;
-  padding: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  line-height: 46px; }
-  .nav-toggle:hover {
-    background: #dbf235;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease; }
-
-.nav-collapse li {
-  padding: 15px;
-  width: 100%; }
-  .nav-collapse li a {
-    color: black;
-    font-weight: 700;
-    text-align: center; }
-
-.click li {
-  float: right;
-  background: white;
-  padding: 15px;
-  font-weight: 700; }
-  .click li a {
-    color: black; }
-  .click li:nth-of-type(1) {
-    background: black; }
-    .click li:nth-of-type(1) a {
-      color: white; }
-
-.main {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/gulls.JPG") no-repeat center center;
-  background-size: cover; }
-
-.anniversary {
-  margin-top: 8rem;
-  width: 150px;
-  height: 150px;
-  background: #51dad0;
-  text-align: center;
-  font-family: "proxima-nova-extra-condensed";
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  line-height: 1;
-  padding-top: 10px;
-  letter-spacing: 0.15em;
-  float: left;
-  padding: 1.5rem;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%; }
-  .anniversary span {
-    font-size: 3.5rem; }
-
-.issue {
-  background: linear-gradient(rgba(232, 244, 9, 0.4), rgba(232, 244, 9, 0.4));
-  padding-bottom: 2rem; }
-  .issue p {
-    font-weight: 700;
-    font-size: 1.2;
-    letter-spacing: 0.05em; }
-
-.border {
-  border: 10px #dbf235 solid; }
-
-.top {
-  background: #dbf235;
-  padding: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  text-align: center;
-  position: fixed;
-  bottom: 10px;
-  right: 10px; }
-
-.program_event {
-  background: rgba(81, 218, 208, 0.5); }
-
-.date {
-  background: #fd4857;
-  color: white;
-  width: 70px;
-  height: 70px;
-  font-size: 1.2rem;
-  font-family: "proxima-nova-extra-condensed";
-  float: right;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  text-align: center;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  margin-right: -50px;
-  margin-top: -50px; }
-
-.description {
-  background: white;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  vertical-align: bottom;
-  font-family: "proxima-nova-extra-condensed";
-  font-weight: 700;
-  width: 100%;
-  margin-top: 200px;
-  padding: 10px; }
-
-.program1, .program2, .program3, .program4 {
-  padding-top: 2rem;
-  height: 300px; }
-
-.program1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.JPG") no-repeat center center;
-  background-size: cover; }
-
-.program2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.JPG") no-repeat center center;
-  background-size: cover; }
-
-.program3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
-  background-size: cover; }
-
-.partner {
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%; }
-
-.partner1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner1.JPG") no-repeat center center;
-  background-size: cover; }
-
-.partner2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner2.JPG") no-repeat center center;
-  background-size: cover; }
-
-.partner3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner3.png") no-repeat center center;
-  background-size: cover; }
-
-.partner4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner4.png") no-repeat center center;
-  background-size: cover; }
-
-.partner5 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner5.png") no-repeat center center;
-  background-size: cover; }
-
-.partner6 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner6.JPG") no-repeat center center;
-  background-size: cover; }
-
-footer {
-  clear: both;
-  background: #51dad0;
-  overflow: hidden;
-  height: 200px; }
+  background: transparent; }
 
 /*# sourceMappingURL=style.css.map */
