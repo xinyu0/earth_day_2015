@@ -233,7 +233,7 @@ h3 {
 
 @media screen and (min-width: 625px) {
   .nav-collapse li {
-    width: 100px;
+    width: 150px;
     display: inline-block; } }
 .click li {
   float: right;
@@ -333,18 +333,7 @@ h3 {
   margin-right: -50px;
   margin-top: -50px; }
 
-.description {
-  background: white;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  vertical-align: bottom;
-  font-family: "proxima-nova-extra-condensed";
-  font-weight: 700;
-  width: 100%;
-  margin-top: 200px;
-  padding: 10px; }
-
-.pastdescription {
+.description, .pastdescription {
   color: #dbf235;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -365,12 +354,16 @@ h3 {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease; }
-    .program1:hover .description, .program2:hover .description, .program3:hover .description, .program4:hover .description {
-      background: #dbf235;
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      transition: all 1s ease; }
+  .program1:hover .description, .program2:hover .description, .program3:hover .description, .program4:hover .description {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
 
 .program1 {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.JPG") no-repeat center center;
@@ -441,6 +434,10 @@ footer {
   width: 100%;
   height: 40px; }
 
+#zip {
+  width: 100%;
+  height: 40px; }
+
 .past1, .past2, .past3, .past4 {
   padding-top: 2rem;
   width: 250px;
@@ -477,6 +474,37 @@ footer {
   background-size: cover; }
 
 .past4 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
+  background-size: cover; }
+
+.event1, .event2, .event3, .event4 {
+  padding-top: 2rem;
+  width: 250px;
+  height: 250px; }
+  .event1:hover .pastdescription, .event2:hover .pastdescription, .event3:hover .pastdescription, .event4:hover .pastdescription {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+.event1 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.JPG") no-repeat center center;
+  background-size: cover; }
+
+.event2 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.JPG") no-repeat center center;
+  background-size: cover; }
+
+.event3 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
+  background-size: cover; }
+
+.event4 {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
   background-size: cover; }
 
@@ -904,5 +932,8 @@ socialmedia
 .eventbtn ul li a:hover {
   color: black;
   background: transparent; }
+
+canvas {
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
