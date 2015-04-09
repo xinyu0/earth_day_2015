@@ -256,7 +256,7 @@ h3 {
     color: black; }
 
 .main {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/gulls.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/gulls.jpg") no-repeat center center;
   background-size: cover; }
 
 .anniversary {
@@ -366,15 +366,15 @@ h3 {
     transition: all 0.5s ease; }
 
 .program1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
 
 .program2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.jpg") no-repeat center center;
   background-size: cover; }
 
 .program3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .partner {
@@ -390,11 +390,11 @@ h3 {
   border-top-left-radius: 50%; }
 
 .partner1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner1.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner1.jpg") no-repeat center center;
   background-size: cover; }
 
 .partner2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner2.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner2.jpg") no-repeat center center;
   background-size: cover; }
 
 .partner3 {
@@ -410,7 +410,7 @@ h3 {
   background-size: cover; }
 
 .partner6 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner6.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner6.jpg") no-repeat center center;
   background-size: cover; }
 
 footer {
@@ -474,19 +474,19 @@ footer {
     transition: all 0.5s ease; }
 
 .past1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
 
 .past2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.jpg") no-repeat center center;
   background-size: cover; }
 
 .past3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .past4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .event1, .event2, .event3, .event4 {
@@ -505,19 +505,19 @@ footer {
     transition: all 0.5s ease; }
 
 .event1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
 
 .event2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.jpg") no-repeat center center;
   background-size: cover; }
 
 .event3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .event4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.JPG") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 /* ====================================   
