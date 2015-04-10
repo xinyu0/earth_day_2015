@@ -257,7 +257,8 @@ h3 {
 
 .main {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/gulls.jpg") no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 2rem; }
 
 .anniversary {
   margin-top: 8rem;
@@ -285,7 +286,7 @@ h3 {
     font-size: 3.5rem; }
 
 .issue {
-  background: linear-gradient(rgba(232, 244, 9, 0.4), rgba(232, 244, 9, 0.4));
+  background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7));
   padding-bottom: 2rem; }
   .issue p {
     font-weight: 700;
@@ -309,7 +310,8 @@ h3 {
 .program {
   background: rgba(81, 218, 208, 0.5);
   overflow: hidden;
-  clear: both; }
+  clear: both;
+  padding-bottom: 2rem; }
 
 .date {
   background: #fd4857;
@@ -967,5 +969,15 @@ label {
   font-weight: 700;
   letter-spacing: 0.15em;
   padding: 10px; }
+
+* {
+  border: 1px solid red; }
+
+.logo2 {
+  width: 400px;
+  height: 76px;
+  float: left;
+  background: url("../image/logo2.svg") no-repeat center center, rgba(255, 255, 255, 0.8);
+  background-size: 350px; }
 
 /*# sourceMappingURL=style.css.map */
