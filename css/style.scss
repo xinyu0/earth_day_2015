@@ -6,12 +6,14 @@
 // color
 
 $primary-color: #dbf235;
-$primary-color2: rgba(232, 244, 9, .4);
+$primary-color2: rgba(232, 244, 9, .7);
 $secondary-color: #51dad0;
 $secondary-color2: rgba(81, 218, 208, .5);
 $link-color: #51dad0;
 $date-color:#fd4857;
-$description-color: rgba(255, 255, 255, .5);
+$date-color2:rgba(253, 72, 87, .5);;
+$description-color: rgba(255, 255, 255, .8);
+$logo:rgba(252, 170, 92, .8);
 
 $header-color: #51dad0;
 
@@ -250,6 +252,7 @@ h3 {
 	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/gulls.jpg") no-repeat center center;
 	background-size:cover;
 	// background-attachment: fixed;
+	padding-bottom: 2rem;
 }
 
 
@@ -320,6 +323,7 @@ h3 {
 	background: $secondary-color2;
 	overflow: hidden;
 	clear: both;
+	padding-bottom: 2rem;
 }
 
 .date {
@@ -586,7 +590,17 @@ footer {
 
 @import "animation";
 @import "form";
-// * {
-// 	border: 1px solid red;
-// }
+* {
+	border: 1px solid red;
+}
 
+
+
+.logo2 {
+	
+	width:400px;
+	height: 76px;
+	float: left;
+	background: url("../image/logo2.svg") no-repeat center center, $description-color;
+	background-size: 350px;
+}
