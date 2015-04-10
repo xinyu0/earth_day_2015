@@ -37,9 +37,9 @@ html {
 
 body { 
 	font-family: "proxima-nova-soft",sans-serif;
-	line-height: 1.5;
+	line-height: 1.6;
 	background: $primary-color url(blossoms.jpg) no-repeat bottom right; 
-	font-size: 1rem;
+	font-size: 1.2rem;
 	}
 
 
@@ -50,11 +50,11 @@ $gut: 2.54%;
 @mixin grid($cnum) {
   width: ($col*$cnum)+($gut*(($cnum)-1));
   // background: #ff5555;
-  height: 100px;
+  // height: 100px;
   float: left;
   margin-right: $gut;
   margin-bottom: 3rem;
-  text-align: center;
+  // text-align: center;
   // padding: 40px;
   box-sizing:border-box;
   // color: #eeeeee;
@@ -69,14 +69,21 @@ $gut: 2.54%;
     text-align: center;
     padding: 20px;
     border: 10px white solid;
+    &:last-of-type {
+  margin-right: 0;
+}
 }
 
-.col6f {
+.col6f, .col8a, .col4a {
 	width:100%;
     background: transparent;
     margin-bottom: 5px;
     text-align: center;
     padding: 20px;
+    // overflow: hidden;;
+    &:last-of-type {
+  margin-right: 0;
+}
  
 }
 
@@ -94,6 +101,14 @@ $gut: 2.54%;
   @include grid(4);
 }
 
+.col4a {
+  @include grid(4);
+}
+
+.col8a {
+  @include grid(8);
+}
+
 .col6 {
   @include grid(6);
 }
@@ -107,9 +122,7 @@ $gut: 2.54%;
   @include grid(6);
 }
 
-div:last-of-type {
-  margin-right: 0;
-}
+
 
 }
 
@@ -120,7 +133,8 @@ div:last-of-type {
 
 .wrapper { 
 	width:80%;
-	margin:0 10%;
+	margin:0 auto;
+	max-width: 960px;
 }
 
 a {text-decoration: none;}
@@ -254,6 +268,17 @@ h3 {
 	padding-bottom: 2rem;
 }
 
+.main_about {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/pollution.jpg") no-repeat center center;
+	background-size:cover;
+	font-weight: 700;
+	// background-attachment: fixed;
+	p {padding-bottom: 2rem;}
+	span {
+		font-size: 1.4rem;
+		font-style: oblique;
+	}
+}
 
 .anniversary {
 	margin-top: 3rem;
@@ -285,10 +310,26 @@ h3 {
 	background: linear-gradient($primary-color2, $primary-color2);
 	padding-bottom: 2rem;
 	p {
-		// font-size: 1.2rem;
+		font-size: 1.1rem;
 		font-weight: 700;
-		font-size: 1.2;
 		letter-spacing: 0.05em;
+	}
+}
+
+.what {
+	background: linear-gradient($primary-color2, $primary-color2);
+	overflow: hidden;
+	// padding-bottom: 2rem;
+	p {
+		// float: left;
+		letter-spacing: 0.05em;
+		font-weight: 500;
+	}
+	.col4a {
+		background: url("../image/about1.jpg") no-repeat center center;
+	background-size:cover;
+
+
 	}
 }
 
@@ -356,9 +397,10 @@ h3 {
 	font-family: $header-font;
 	font-weight: 700;
 	width: 100%;
-	margin-top: 40%;
+	margin-top: 30%;
+	margin-bottom: 40%;
 	padding:10px;
-	font-size: 3rem;
+	font-size: 1.5rem;
 
 }
 
@@ -368,23 +410,21 @@ h3 {
 	height:300px;
 	&:hover {
 		border:10px $primary-color solid;
-		-webkit-transition: all 1s ease; 
-	-moz-transition: all 1s ease; 
-	-o-transition: all 1s ease; 
-	transition: all 1s ease;
+		
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
 	}
 	&:hover {
 		
 		.description {
-	-webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-	-webkit-transition: all 0.5s ease; 
-	-moz-transition: all 0.5s ease; 
-	-o-transition: all 0.5s ease; 
-	transition: all 0.5s ease;
+		color:black;
+
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
 	}
 	}
 
@@ -394,16 +434,40 @@ h3 {
 .program1 {
 	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program1.jpg") no-repeat center center;
 	background-size:cover;
+	&:hover {
+		background: linear-gradient($primary-color2, $primary-color2), url("../image/program1.jpg") no-repeat center center;
+		
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
+	}
 }
 
 .program2 {
 	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program2.jpg") no-repeat center center;
 	background-size:cover;
+	&:hover {
+		background: linear-gradient($primary-color2, $primary-color2), url("../image/program2.jpg") no-repeat center center;
+		
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
+	}
 }
 
 .program3 {
 	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program3.jpg") no-repeat center center;
 	background-size:cover;
+	&:hover {
+		background: linear-gradient($primary-color2, $primary-color2), url("../image/program3.jpg") no-repeat center center;
+		
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
+	}
 }
 
  .partner {
@@ -431,7 +495,7 @@ h3 {
 }
 
 .partner4 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner4.png") no-repeat center center;
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner4.jpg") no-repeat center center;
 	background-size:cover;
 }
 
@@ -590,7 +654,7 @@ footer {
 
 @import "animation";
 @import "form";
-
+@import "test";
 
 // * {
 // 	border: 1px solid red;
