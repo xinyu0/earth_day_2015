@@ -261,7 +261,7 @@ h3 {
   padding-bottom: 2rem; }
 
 .anniversary {
-  margin-top: 8rem;
+  margin-top: 3rem;
   width: 150px;
   height: 150px;
   background: #51dad0;
@@ -273,6 +273,7 @@ h3 {
   padding-top: 10px;
   letter-spacing: 0.15em;
   float: left;
+  clear: both;
   padding: 1.5rem;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;

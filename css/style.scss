@@ -158,7 +158,6 @@ h3 {
 }
 
 
-
 .nav-toggle {
 	float:left;
 	background: white;
@@ -257,7 +256,7 @@ h3 {
 
 
 .anniversary {
-	margin-top: 8rem;
+	margin-top: 3rem;
 	width:150px;
 	height: 150px;
 	background: $secondary-color;
@@ -269,6 +268,7 @@ h3 {
 	padding-top: 10px;
 	letter-spacing: 0.15em;
 	float: left;
+	clear: both;
 	padding: 1.5rem;
 	// font-weight: 700;
 	@include border-top-radius(50%);
