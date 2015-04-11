@@ -39,13 +39,13 @@ body {
 	font-family: "proxima-nova-soft",sans-serif;
 	line-height: 1.6;
 	background: $primary-color url(blossoms.jpg) no-repeat bottom right; 
-	font-size: 1.2rem;
+	// font-size: 1.1rem;
 	}
 
 
 // grids
-$col: 6%;
-$gut: 2.54%;
+$col: 5.58%;
+$gut: 3%;
 
 @mixin grid($cnum) {
   width: ($col*$cnum)+($gut*(($cnum)-1));
@@ -69,20 +69,41 @@ $gut: 2.54%;
     text-align: center;
     padding: 20px;
     border: 10px white solid;
+
     &:last-of-type {
-  margin-right: 0;
+  	margin-right: 0;
 }
 }
 
-.col6f, .col8a, .col4a {
+.col6f, .col6p, .col4a {
 	width:100%;
     background: transparent;
     margin-bottom: 5px;
-    text-align: center;
+    // text-align: center;
     padding: 20px;
     // overflow: hidden;;
     &:last-of-type {
-  margin-right: 0;
+  	margin-right: 0;
+}
+ 
+}
+
+.col6p {
+	h2 {
+
+	}
+ 
+}
+
+.col8a {
+	width:100%;
+    background: transparent;
+    margin-bottom: 5px;
+    // text-align: center;
+    // padding: 20px;
+    // overflow: hidden;;
+    &:last-of-type {
+  	margin-right: 0;
 }
  
 }
@@ -121,8 +142,9 @@ $gut: 2.54%;
 .col6f  {
   @include grid(6);
 }
-
-
+.col6p  {
+  @include grid(6);
+}
 
 }
 
@@ -155,7 +177,7 @@ h1 {
 	text-align: center;
 	// font-style: italic;
 	font-size: 3rem;
-	padding: 8rem 0;
+	padding: 8rem 0 4rem 0;
 	// clear:both;
 }
 
@@ -176,12 +198,12 @@ h3 {
 	float:left;
 	background: white;
 	font-family: $header-font;
-	
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
 	color: black;
 	padding:15px;
 	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.15em;
+	
 	line-height: 46px;
 	// font-size: 1.2rem;
 	&:hover {
@@ -206,6 +228,7 @@ h3 {
 		text-align: center;
 		text-transform: uppercase;
 	letter-spacing: 0.15em;
+	font-size: 1.1rem;
 
 	}
 	}
@@ -215,7 +238,7 @@ h3 {
 @media screen and (min-width: 625px) {
 .nav-collapse {
 	li {
-		width:150px;
+		width:18%;
 		display: inline-block;
 	// 	a {
 	// 	color: black;
@@ -268,6 +291,13 @@ h3 {
 	padding-bottom: 2rem;
 }
 
+.main_program {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program.jpg") no-repeat center center;
+	background-size:cover;
+	// background-attachment: fixed;
+	padding-bottom: 2rem;
+}
+
 .main_about {
 	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/pollution.jpg") no-repeat center center;
 	background-size:cover;
@@ -309,9 +339,21 @@ h3 {
 .issue {
 	background: linear-gradient($primary-color2, $primary-color2);
 	padding-bottom: 2rem;
+
 	p {
 		font-size: 1.1rem;
 		font-weight: 700;
+		letter-spacing: 0.05em;
+	}
+}
+
+.main_program1  {
+	background: linear-gradient($primary-color2, $primary-color2);
+	padding-bottom: 2rem;
+	overflow: hidden;
+	p {
+		font-size: 1.1rem;
+		// font-weight: 700;
 		letter-spacing: 0.05em;
 	}
 }
@@ -326,6 +368,7 @@ h3 {
 		font-weight: 500;
 	}
 	.col4a {
+		min-height: 200px;
 		background: url("../image/about1.jpg") no-repeat center center;
 	background-size:cover;
 
@@ -567,8 +610,8 @@ footer {
 
 .past1, .past2, .past3, .past4 {
 	padding-top: 2rem;
-	width:250px;
-	height:250px;
+	width:200px;
+	height:200px;
 	@include border-top-radius(50%);
 	@include border-right-radius(50%);
 	@include border-bottom-radius(50%);
@@ -614,8 +657,8 @@ footer {
 
 .event1, .event2, .event3, .event4 {
 	padding-top: 2rem;
-	width:250px;
-	height:250px;
+	// width:250px;
+	// height:250px;
 	&:hover {
 		
 		.pastdescription {
@@ -652,13 +695,60 @@ footer {
 	background-size:cover;
 }
 
+
+.location1, .location2, .location3, .location4 {
+	padding-top: 2rem;
+	// width:250px;
+	height:250px;
+	// &:hover {
+		
+	// 	.pastdescription {
+	// -webkit-transform: rotate(360deg);
+ //    -moz-transform: rotate(360deg);
+ //    -o-transform: rotate(360deg);
+ //    -ms-transform: rotate(360deg);
+ //    transform: rotate(360deg);
+	// -webkit-transition: all 0.5s ease; 
+	// -moz-transition: all 0.5s ease; 
+	// -o-transition: all 0.5s ease; 
+	// transition: all 0.5s ease;
+	// }
+
+}
+
+.location1 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program1.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.location2 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program2.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.location3 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program3.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.location4 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program3.jpg") no-repeat center center;
+	background-size:cover;
+}
+
 @import "animation";
 @import "form";
 @import "test";
 
-// * {
-// 	border: 1px solid red;
-// }
+.logo1 {
+	
+	width:340px;
+	height: 76px;
+	float: left;
+
+	background: url("../image/logo1.svg") no-repeat center center, white;
+	background-size: 300px;
+}
 
 
 
@@ -670,3 +760,36 @@ footer {
 	background: url("../image/logo2.svg") no-repeat center center, $description-color;
 	background-size: 350px;
 }
+
+
+
+#days, #hours, #minutes, #seconds {
+  font-size: 2rem;
+	float: left;}
+
+#timer {
+	width: 230px;
+	height: 70px;
+	background: $primary-color;
+	margin: 0 auto;
+	display: inline-block;
+  	line-height: 1;
+ 	padding: 6px;
+  	font-family: $header-font;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	text-align: center;
+	overflow: hidden;
+	float: right;
+	span {
+		display: block;
+		// font-weight: 700;
+		font-size: 1rem;
+		padding: 3px;
+	}
+}
+
+
+// * {
+// 	border: 1px solid red;
+// }

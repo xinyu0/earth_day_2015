@@ -97,8 +97,7 @@ html {
 body {
   font-family: "proxima-nova-soft",sans-serif;
   line-height: 1.6;
-  background: #dbf235 url(blossoms.jpg) no-repeat bottom right;
-  font-size: 1.2rem; }
+  background: #dbf235 url(blossoms.jpg) no-repeat bottom right; }
 
 .col1, .col2, .col3, .col4, .col5, .col6, .col6e {
   width: 100%;
@@ -111,69 +110,82 @@ body {
   .col1:last-of-type, .col2:last-of-type, .col3:last-of-type, .col4:last-of-type, .col5:last-of-type, .col6:last-of-type, .col6e:last-of-type {
     margin-right: 0; }
 
-.col6f, .col8a, .col4a {
+.col6f, .col6p, .col4a {
   width: 100%;
   background: transparent;
   margin-bottom: 5px;
-  text-align: center;
   padding: 20px; }
-  .col6f:last-of-type, .col8a:last-of-type, .col4a:last-of-type {
+  .col6f:last-of-type, .col6p:last-of-type, .col4a:last-of-type {
+    margin-right: 0; }
+
+.col8a {
+  width: 100%;
+  background: transparent;
+  margin-bottom: 5px; }
+  .col8a:last-of-type {
     margin-right: 0; }
 
 @media screen and (min-width: 500px) {
   .col2 {
-    width: 14.54%;
+    width: 14.16%;
     float: left;
-    margin-right: 2.54%;
+    margin-right: 3%;
     margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col3 {
-    width: 23.08%;
+    width: 22.74%;
     float: left;
-    margin-right: 2.54%;
+    margin-right: 3%;
     margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col4 {
-    width: 31.62%;
+    width: 31.32%;
     float: left;
-    margin-right: 2.54%;
+    margin-right: 3%;
     margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col4a {
-    width: 31.62%;
+    width: 31.32%;
     float: left;
-    margin-right: 2.54%;
+    margin-right: 3%;
     margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col8a {
-    width: 65.78%;
+    width: 65.64%;
     float: left;
-    margin-right: 2.54%;
+    margin-right: 3%;
     margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col6 {
-    width: 48.7%;
+    width: 48.48%;
     float: left;
-    margin-right: 2.54%;
+    margin-right: 3%;
     margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col6e {
-    width: 48.7%;
+    width: 48.48%;
     float: left;
-    margin-right: 2.54%;
+    margin-right: 3%;
     margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col6f {
-    width: 48.7%;
+    width: 48.48%;
     float: left;
-    margin-right: 2.54%;
+    margin-right: 3%;
+    margin-bottom: 3rem;
+    box-sizing: border-box; }
+
+  .col6p {
+    width: 48.48%;
+    float: left;
+    margin-right: 3%;
     margin-bottom: 3rem;
     box-sizing: border-box; } }
 .wrapper {
@@ -196,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   text-align: center;
   font-size: 3rem;
-  padding: 8rem 0; }
+  padding: 8rem 0 4rem 0; }
 
 h2 {
   font-size: 2rem;
@@ -210,11 +222,11 @@ h3 {
   float: left;
   background: white;
   font-family: "proxima-nova-extra-condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   color: black;
   padding: 15px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
   line-height: 46px; }
   .nav-toggle:hover {
     background: #dbf235;
@@ -233,11 +245,12 @@ h3 {
     font-family: "proxima-nova-extra-condensed";
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.15em; }
+    letter-spacing: 0.15em;
+    font-size: 1.1rem; }
 
 @media screen and (min-width: 625px) {
   .nav-collapse li {
-    width: 150px;
+    width: 18%;
     display: inline-block; } }
 .click li {
   float: right;
@@ -261,6 +274,11 @@ h3 {
 
 .main {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/gulls1.jpg") no-repeat center center;
+  background-size: cover;
+  padding-bottom: 2rem; }
+
+.main_program {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program.jpg") no-repeat center center;
   background-size: cover;
   padding-bottom: 2rem; }
 
@@ -308,6 +326,14 @@ h3 {
     font-weight: 700;
     letter-spacing: 0.05em; }
 
+.main_program1 {
+  background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7));
+  padding-bottom: 2rem;
+  overflow: hidden; }
+  .main_program1 p {
+    font-size: 1.1rem;
+    letter-spacing: 0.05em; }
+
 .what {
   background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7));
   overflow: hidden; }
@@ -315,6 +341,7 @@ h3 {
     letter-spacing: 0.05em;
     font-weight: 500; }
   .what .col4a {
+    min-height: 200px;
     background: url("../image/about1.jpg") no-repeat center center;
     background-size: cover; }
 
@@ -494,8 +521,8 @@ footer {
 
 .past1, .past2, .past3, .past4 {
   padding-top: 2rem;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -532,9 +559,7 @@ footer {
   background-size: cover; }
 
 .event1, .event2, .event3, .event4 {
-  padding-top: 2rem;
-  width: 250px;
-  height: 250px; }
+  padding-top: 2rem; }
   .event1:hover .pastdescription, .event2:hover .pastdescription, .event3:hover .pastdescription, .event4:hover .pastdescription {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -559,6 +584,26 @@ footer {
   background-size: cover; }
 
 .event4 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background-size: cover; }
+
+.location1, .location2, .location3, .location4 {
+  padding-top: 2rem;
+  height: 250px; }
+
+.location1 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.jpg") no-repeat center center;
+  background-size: cover; }
+
+.location2 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.jpg") no-repeat center center;
+  background-size: cover; }
+
+.location3 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background-size: cover; }
+
+.location4 {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
@@ -1007,11 +1052,41 @@ label {
   letter-spacing: 0.15em;
   padding: 10px; }
 
+.logo1 {
+  width: 340px;
+  height: 76px;
+  float: left;
+  background: url("../image/logo1.svg") no-repeat center center, white;
+  background-size: 300px; }
+
 .logo2 {
   width: 400px;
   height: 76px;
   float: left;
   background: url("../image/logo2.svg") no-repeat center center, rgba(255, 255, 255, 0.8);
   background-size: 350px; }
+
+#days, #hours, #minutes, #seconds {
+  font-size: 2rem;
+  float: left; }
+
+#timer {
+  width: 230px;
+  height: 70px;
+  background: #dbf235;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 1;
+  padding: 6px;
+  font-family: "proxima-nova-extra-condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+  overflow: hidden;
+  float: right; }
+  #timer span {
+    display: block;
+    font-size: 1rem;
+    padding: 3px; }
 
 /*# sourceMappingURL=style.css.map */
