@@ -308,6 +308,13 @@ h3 {
 	// padding-bottom: 2rem;
 }
 
+.main2 {
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/biking.jpg") no-repeat center center;
+	background-size:cover;
+	// background-attachment: fixed;
+	// padding-bottom: 2rem;
+}
+
 .main_program {
 	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program.jpg") no-repeat center center;
 	background-size:cover;
@@ -769,7 +776,8 @@ footer {
 	width:340px;
 	height: 76px;
 	float: left;
-
+	// margin-right: 30%;
+	// margin-left: 30%;
 	background: url("../image/logo1.svg") no-repeat center center, white;
 	background-size: 300px;
 }
@@ -780,6 +788,8 @@ footer {
 	
 	width:400px;
 	height: 76px;
+	
+// margin-right: -50%;
 	float: left;
 	background: url("../image/logo2.svg") no-repeat center center, $description-color;
 	background-size: 350px;

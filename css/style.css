@@ -289,6 +289,10 @@ h3 {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/gulls1.jpg") no-repeat center center;
   background-size: cover; }
 
+.main2 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/biking.jpg") no-repeat center center;
+  background-size: cover; }
+
 .main_program {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program.jpg") no-repeat center center;
   background-size: cover;
