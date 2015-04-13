@@ -7,8 +7,10 @@
 
 $primary-color: #dbf235;
 $primary-color2: rgba(232, 244, 9, .7);
+
 $secondary-color: #51dad0;
 $secondary-color2: rgba(81, 218, 208, .7);
+$secondary-color3: rgba(81, 218, 208, .5);
 $link-color: #51dad0;
 $date-color:#fd4857;
 $date-color2:rgba(253, 72, 87, .5);;
@@ -60,7 +62,7 @@ $gut: 3%;
 }
 
 
-.col1, .col2, .col3, .col4, .col5, .col6, .col6e { 
+.col1, .col2, .col3, .col4, .col5, .col6 { 
     width:100%;
     height: 100px;
     background: transparent;
@@ -87,7 +89,20 @@ $gut: 3%;
 }
 }
 
-.col6f, .col6p, .col4a {
+.col2a { 
+    width:100%;
+    height: 100px;
+    background: transparent;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 20px;
+
+    &:last-of-type {
+  	margin-right: 0;
+}
+}
+
+.col6p, .col4a, .col4ab, .col6a {
 	width:100%;
     background: transparent;
     margin-bottom: 5px;
@@ -98,6 +113,41 @@ $gut: 3%;
   	margin-right: 0;
 }
  
+}
+
+.col6f {
+	width:100%;
+    background: transparent;
+    margin-bottom: 0;
+    // text-align: center;
+    padding: 20px;
+    // overflow: hidden;;
+
+    &:last-of-type {
+  	margin-right: 0;
+}
+ 
+}
+
+.col6e { 
+    width:100%;
+    height: 100px;
+    background: transparent;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 20px;
+    &:last-of-type {
+  	margin-right: 0;
+}
+}
+
+.col6ab { 
+    width:100%;
+    background: transparent;
+    margin-bottom: 5px;
+    &:last-of-type {
+  	margin-right: 0;
+}
 }
 
 .col6p {
@@ -120,10 +170,28 @@ $gut: 3%;
  
 }
 
+.col2p { 
+    width:100%;
+    height: 100px;
+    background: transparent;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 20px;
+    &:last-of-type {
+  	margin-right: 0;
+}
+}
 
 @media screen and (min-width: 500px) {
 
 .col2 {
+  @include grid(2);
+}
+.col2a {
+  @include grid(2);
+}
+
+.col2p {
   @include grid(2);
 }
 .col3 {
@@ -133,6 +201,7 @@ $gut: 3%;
   @include grid(3);
 }
 
+
 .col4 {
   @include grid(4);
 }
@@ -141,6 +210,9 @@ $gut: 3%;
   @include grid(4);
 }
 
+.col4ab {
+  @include grid(4);
+}
 .col8a {
   @include grid(8);
 }
@@ -156,8 +228,17 @@ $gut: 3%;
 
 .col6f  {
   @include grid(6);
+  margin-bottom: 0;
 }
 .col6p  {
+  @include grid(6);
+}
+
+.col6a  {
+  @include grid(6);
+}
+
+.col6ab  {
   @include grid(6);
 }
 
@@ -175,12 +256,16 @@ $gut: 3%;
 	padding: 4rem 0;
 	// clear: both;
 	overflow: hidden;
+	p {
+		font-size: 1.1rem;
+	}
 }
 
 .wrapper1 { 
 	width:80%;
 	margin:0 auto;
 	max-width: 960px;
+	padding: 6rem 0;
 	h3 {
 		text-align: center;
 		font-size: 1.75rem;
@@ -195,12 +280,25 @@ $gut: 3%;
 	// clear: both;
 }
 
+.wrapper_p { 
+	width:80%;
+	margin:0 auto;
+	max-width: 960px;
+	padding: 4rem 0 8rem 0;
+	// clear: both;
+	overflow: hidden;
+	p {
+		font-size: 1.1rem;
+	}
+}
+
 a {text-decoration: none;}
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $header-font,sans-serif;
 	font-weight: 700;
 	letter-spacing: 0.15em;
+	// text-transform: uppercase;
 	line-height: 1.2;
 	a {
 		text-decoration: none;
@@ -212,14 +310,15 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
 	text-align: center;
 	// font-style: italic;
-	font-size: 3rem;
+	font-size: 4rem;
 	padding: 8rem 0 4rem 0;
 	// clear:both;
 }
 
 h2 {
 	font-size: 2rem;
-	padding-top:1rem;
+	padding-bottom:1rem;
+	text-transform: uppercase;
 	clear: both;
 }
 
@@ -354,18 +453,19 @@ h6 {
 }
 
 .main_program {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program.jpg") no-repeat center center;
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/mainprogram.jpg") no-repeat center center;
 	background-size:cover;
 	// background-attachment: fixed;
-	padding-bottom: 2rem;
 }
 
 .main_about {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/pollution.jpg") no-repeat center center;
+	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/smile.jpg") no-repeat center center;
 	background-size:cover;
 	font-weight: 700;
 	// background-attachment: fixed;
-	p {padding-bottom: 2rem;}
+	p {
+		font-size:1.1rem;
+		padding-bottom: 2rem;}
 	span {
 		font-size: 1.4rem;
 		font-style: oblique;
@@ -430,13 +530,29 @@ h6 {
 		font-weight: 500;
 	}
 	.col4a {
-		min-height: 200px;
-		background: url("../image/about1.jpg") no-repeat center center;
+		min-height: 400px;
+		background: url("../image/what.jpg") no-repeat center center;
 	background-size:cover;
 
 
 	}
 }
+
+.col4ab  {
+		min-height: 400px;
+		background: url("../image/why.jpg") no-repeat center center;
+	background-size:cover;
+
+
+	}
+
+	.col6a  {
+		min-height: 400px;
+		background: url("../image/smile.jpg") no-repeat center center;
+	background-size:cover;
+
+
+	}
 
 .border {
 	border: 10px $primary-color solid;
@@ -494,10 +610,52 @@ h6 {
 	@include border-right-radius(50%);
 	@include border-bottom-radius(50%);
 	@include border-left-radius(50%);
-	margin-right: -50px;
-	margin-top: -50px;
+	margin-right: -55px;
+	margin-top: -70px;
 }
 
+.date2 {
+	background: $primary-color;
+	color: #222;
+	width:70px;
+	height: 70px;
+	font-size:1.2rem;
+	font-weight: 700;
+	font-family: $header-font;
+	float: left;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	padding: 20px 5px 5px 5px;
+	text-align: center;
+	@include border-top-radius(50%);
+	@include border-right-radius(50%);
+	@include border-bottom-radius(50%);
+	@include border-left-radius(50%);
+	margin-left: 0px;
+	margin-top: 150px;
+}
+
+
+.date3 {
+	background: $secondary-color;
+	color: #222;
+	width:70px;
+	height: 70px;
+	font-size:1.2rem;
+	font-weight: 700;
+	font-family: $header-font;
+	float: left;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	padding: 20px 5px 5px 5px;
+	text-align: center;
+	@include border-top-radius(50%);
+	@include border-right-radius(50%);
+	@include border-bottom-radius(50%);
+	@include border-left-radius(50%);
+	margin-left: 0px;
+	margin-top: 150px;
+}
 
 
 .description, .pastdescription {
@@ -542,13 +700,18 @@ h6 {
 
 }
 
+.program1a, .program2a, .program3a, .program4a {
+	padding-top: 2rem;
+	height:300px;
+}
+
 
 .program1 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program1.jpg") no-repeat center center;
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/program1.jpg") no-repeat center center;
 	background-size:cover;
 	&:hover {
 		background: linear-gradient($primary-color2, $primary-color2), url("../image/program1.jpg") no-repeat center center;
-		
+		background-size:cover;
 		-webkit-transition: all .5s ease; 
 	-moz-transition: all .5s ease; 
 	-o-transition: all .5s ease; 
@@ -557,11 +720,11 @@ h6 {
 }
 
 .program2 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program2.jpg") no-repeat center center;
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/program2.jpg") no-repeat center center;
 	background-size:cover;
 	&:hover {
 		background: linear-gradient($primary-color2, $primary-color2), url("../image/program2.jpg") no-repeat center center;
-		
+		background-size:cover;
 		-webkit-transition: all .5s ease; 
 	-moz-transition: all .5s ease; 
 	-o-transition: all .5s ease; 
@@ -570,10 +733,11 @@ h6 {
 }
 
 .program3 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program3.jpg") no-repeat center center;
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/program3.jpg") no-repeat center center;
 	background-size:cover;
 	&:hover {
 		background: linear-gradient($primary-color2, $primary-color2), url("../image/program3.jpg") no-repeat center center;
+		background-size:cover;
 		
 		-webkit-transition: all .5s ease; 
 	-moz-transition: all .5s ease; 
@@ -582,42 +746,142 @@ h6 {
 	}
 }
 
+.program1a {
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/program1.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.program2a {
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/program2.jpg") no-repeat center center;
+	background-size:cover;
+	
+}
+
+.program3a {
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/program3.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.pg1, .pg2, .pg3, .pg4, .pg5, .pg6 {
+	height:300px;}
+
+.pg1 {
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/pg1.jpg") no-repeat center center;
+	background-size:cover;
+	&:hover {
+		background: url("../image/pg1.jpg") no-repeat center center;
+		background-size:cover;
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
+	}
+}
+
+.pg2 {
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/pg2.jpg") no-repeat center center;
+	background-size:cover;
+	&:hover {
+		background: url("../image/pg2.jpg") no-repeat center center;
+		background-size:cover;
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
+	}
+}
+
+.pg3 {
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/pg3.jpg") no-repeat center center;
+	background-size:cover;
+	&:hover {
+		background: url("../image/pg3.jpg") no-repeat center center;
+		background-size:cover;
+		
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
+	}
+}
+
+.pg4 {
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/pg4.jpg") no-repeat center center;
+	background-size:cover;
+	&:hover {
+		background: url("../image/pg4.jpg") no-repeat center center;
+		background-size:cover;
+		
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
+	}
+}
+
+.pg5 {
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/pg5.jpg") no-repeat center center;
+	background-size:cover;
+	&:hover {
+		background: url("../image/pg5.jpg") no-repeat center center;
+		background-size:cover;
+		
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
+	}
+}
+
+.pg6 {
+	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/pg6.jpg") no-repeat center center;
+	background-size:cover;
+	&:hover {
+		background: url("../image/pg6.jpg") no-repeat center center;
+		background-size:cover;
+		
+		-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease; 
+	-o-transition: all .5s ease; 
+	transition: all .5s ease;
+	}
+}
  .partner {
- 	width: 100px;
+ 	// width: 100px;
  	height: 100px;
- 	@include border-top-radius(50%);
-	@include border-right-radius(50%);
-	@include border-bottom-radius(50%);
-	@include border-left-radius(50%);
+ 	@include border-top-radius(5px);
+	@include border-right-radius(5px);
+	@include border-bottom-radius(5px);
+	@include border-left-radius(5px);
  }
 
 .partner1 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner1.jpg") no-repeat center center;
+	background: url("../image/partner1.jpg") no-repeat center center;
 	background-size:cover;
 }
 
 .partner2 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner2.jpg") no-repeat center center;
+	background: url("../image/partner2.jpg") no-repeat center center;
 	background-size:cover;
 }
 
 .partner3 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner3.png") no-repeat center center;
+	background: url("../image/partner3.jpg") no-repeat center center;
 	background-size:cover;
 }
 
 .partner4 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner4.jpg") no-repeat center center;
+	background: url("../image/partner4.jpg") no-repeat center center;
 	background-size:cover;
 }
 
 .partner5 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner5.png") no-repeat center center;
+	background: url("../image/partner5.jpg") no-repeat center center;
 	background-size:cover;
 }
 
 .partner6 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/partner6.jpg") no-repeat center center;
+	background: url("../image/partner6.jpg") no-repeat center center;
 	background-size:cover;
 }
 
@@ -629,6 +893,9 @@ footer {
 	overflow: hidden;
 	// height: 400px;
 	// height: 200px;
+	h3 {
+		padding-bottom:1rem;
+	}
 
 	nav {
 		font-family: $header-font;
@@ -643,8 +910,9 @@ footer {
 
 	p {
 		width: 100%;
-		text-align: center;
+		// text-align: center;
 		clear: both;
+		margin-top: 2.5rem;
 	}
 }
 
@@ -679,8 +947,8 @@ footer {
 
 .past1, .past2, .past3, .past4, .past5 {
 	padding-top: 2rem;
-	width:200px;
-	height:200px;
+	width:150px;
+	height:150px;
 	// @include border-top-radius(50%);
 	// @include border-right-radius(50%);
 	// @include border-bottom-radius(50%);
@@ -886,6 +1154,11 @@ footer {
 	}
 }
 
+.textlink a {
+	padding-top: 5px;
+	font-style: oblique;
+	font-size: 1.1rem;
+}
 
 // * {
 // 	border: 1px solid red;

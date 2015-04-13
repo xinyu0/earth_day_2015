@@ -5,19 +5,124 @@
    .link
    ==================================== */
 
-.link { clear: both;
-	text-align: center; margin: 20px 0 0; }
-.link a.btn { 
+// .link { clear: both;
+// 	text-align: center; 
+// 	margin: 20px 0 0; }
+// .link a.btn { 
+// 	color: #222;
+// 	background: white;
+// 	text-decoration: none;
+// 	padding: 0 55px 0 55px; 
+// 	display: inline-block; 
+// 	*display: inline;
+// 	*zoom: 1;
+// 	text-align: center;    
+// 	font-family: $header-font;
+// 	font-weight: 700; 
+// 	letter-spacing: 0.15em; 
+// 	line-height: 55px; 
+// 	text-transform: uppercase; 
+// 	-moz-border-radius: 3px; 
+// 	-webkit-border-radius: 3px; 
+// 	border-radius: 3px; 
+// 	position: relative; 
+// 	overflow: hidden; 
+// 	outline: none; }
+
+// .link a.btn span { 
+// 	position: relative; 
+// 	display: inline-block; 
+// 	*display: inline;
+// 	*zoom: 1;
+// 	-webkit-transition: all 0.3s ease; 
+// 	-moz-transition: all 0.3s ease; 
+// 	-o-transition: all 0.3s ease; 
+// 	transition: all 0.3s ease; outline: none; }
+
+// .link a.btn span::before { position: absolute; top: 100%; content: attr(data-hover); -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+// .link a.btn:after { font-family: 'FontAwesome'; content: "\f054"; font-size: 12px; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; position: absolute; top: 0; right: 15px; z-index: 1; line-height: 55px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+// .link a.btn:hover:after { -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -o-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); }
+
+.link_lg a.btn:hover span,
+.link_lg a.btn:focus span { -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); transform: translateY(-100%); }
+.link_lg a.btn:hover { background: $secondary-color; }
+
+// bigger button
+
+.link_lg { clear: both;
+	text-align: center; 
+	margin: 20px 0 0; }
+.link_lg a.btn { 
 	color: #222;
+	font-size: 1.5rem;
 	background: white;
 	text-decoration: none;
-	padding: 0 65px 0 55px; 
+	padding: 10px 50px 10px 50px; 
 	display: inline-block; 
 	*display: inline;
 	*zoom: 1;
 	text-align: center;    
 	font-family: $header-font;
-	font-weight: 700; letter-spacing: 0.15em; line-height: 55px; text-transform: uppercase; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; position: relative; overflow: hidden; outline: none; }
+	font-weight: 700; 
+	letter-spacing: 0.15em; 
+	line-height: 55px; 
+	text-transform: uppercase; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	border-radius: 3px; 
+	position: relative; 
+	overflow: hidden; 
+	outline: none; }
+
+.link_lg a.btn span { 
+	position: relative; 
+	display: inline-block; 
+	*display: inline;
+	*zoom: 1;
+	-webkit-transition: all 0.3s ease; 
+	-moz-transition: all 0.3s ease; 
+	-o-transition: all 0.3s ease; 
+	transition: all 0.3s ease; outline: none; }
+
+.link_lg a.btn span::before { position: absolute; top: 100%; content: attr(data-hover); -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+// .link a.btn:after { font-family: 'FontAwesome'; content: "\f054"; font-size: 12px; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; position: absolute; top: 0; right: 15px; z-index: 1; line-height: 55px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+// .link a.btn:hover:after { -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -o-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); }
+
+.link_lg a.btn:hover span,
+.link_lg a.btn:focus span { -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); transform: translateY(-100%); }
+.link_lg a.btn:hover { background: $secondary-color; }
+
+// 
+.link a.btn:hover span,
+.link a.btn:focus span { -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); transform: translateY(-100%); }
+.link a.btn:hover { background: $secondary-color; }
+
+// bigger button
+
+.link { clear: both;
+	text-align: center; 
+	margin: 20px 0 0; }
+.link a.btn { 
+	color: #222;
+	// font-size: 1.5rem;
+	background: white;
+	text-decoration: none;
+	padding: 0px 40px 0px 40px; 
+	display: inline-block; 
+	*display: inline;
+	*zoom: 1;
+	text-align: center;    
+	font-family: $header-font;
+	font-weight: 700; 
+	letter-spacing: 0.15em; 
+	line-height: 55px; 
+	text-transform: uppercase; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	border-radius: 3px; 
+	position: relative; 
+	overflow: hidden; 
+	outline: none; }
 
 .link a.btn span { 
 	position: relative; 
@@ -36,7 +141,6 @@
 .link a.btn:hover span,
 .link a.btn:focus span { -webkit-transform: translateY(-100%); -moz-transform: translateY(-100%); transform: translateY(-100%); }
 .link a.btn:hover { background: $secondary-color; }
-
 
 /* ==========================================================================   
    #scrollUp
@@ -89,8 +193,7 @@ socialmedia
    ============================== */ 
 .socialmedia { 
 	width:100%;
-	display: block; z-index: 2; 
-	margin: 0 30%;}
+	display: block; z-index: 2;}
 .socialmedia ul { list-style: none; padding: 0; margin: 0 auto; font-size: 0; }
 .socialmedia ul li { 
 	// float:left;
@@ -225,3 +328,20 @@ socialmedia
 .get ul li a:hover { color: black; background: transparent; 
 
 }
+
+// 
+// 
+.get1 ul li { display: inline-block; *display: inline;
+*zoom: 1;
+ }
+.get1 ul li a { display: block; color: black; font-size: 1.1rem;
+	font-family: $header-font, sans-serif; font-weight: 700; line-height: 1.5; letter-spacing: 0.1em; text-decoration: none; text-transform: uppercase; position: relative; overflow: hidden; }
+.get1 ul li a:before { position: absolute; right: 0; bottom: 0px; left: 0px; display: block; border-bottom: black 2px solid; content: ""; z-index: 2; webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; -webkit-transform: translate(-100%, 0px); -moz-transform: translate(-100%, 0px); -o-transform: translate(-100%, 0px); -ms-transform: translate(-100%, 0px); transform: translate(-100%, 0px); }
+.get1 ul li a:hover:before { -webkit-transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -o-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); transform: translate(0%, 0%); }
+.get1 ul li a:after { position: absolute; right: 0; top: 0px; left: 0; display: block; border-bottom: black 2px solid; content: ""; z-index: 2; webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform: translate(100%, 0px); -moz-transform: translate(100%, 0px); -o-transform: translate(100%, 0px); -ms-transform: translate(100%, 0px); transform: translate(100%, 0px); }
+.get1 ul li a:hover:after { -webkit-transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -o-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); transform: translate(0%, 0%); }
+
+.get1 ul li a:hover { color: black; background: transparent; 
+
+}
+
