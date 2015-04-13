@@ -110,6 +110,16 @@ body {
   .col1:last-of-type, .col2:last-of-type, .col3:last-of-type, .col4:last-of-type, .col5:last-of-type, .col6:last-of-type, .col6e:last-of-type {
     margin-right: 0; }
 
+.col3a {
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 20px; }
+  .col3a:last-of-type {
+    margin-right: 0; }
+
 .col6f, .col6p, .col4a {
   width: 100%;
   background: transparent;
@@ -134,6 +144,13 @@ body {
     box-sizing: border-box; }
 
   .col3 {
+    width: 22.74%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 3rem;
+    box-sizing: border-box; }
+
+  .col3a {
     width: 22.74%;
     float: left;
     margin-right: 3%;
@@ -556,19 +573,11 @@ footer {
   width: 100%;
   height: 40px; }
 
-.past1, .past2, .past3, .past4 {
+.past1, .past2, .past3, .past4, .past5 {
   padding-top: 2rem;
   width: 200px;
-  height: 200px;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%; }
-  .past1:hover .pastdescription, .past2:hover .pastdescription, .past3:hover .pastdescription, .past4:hover .pastdescription {
+  height: 200px; }
+  .past1:hover .pastdescription, .past2:hover .pastdescription, .past3:hover .pastdescription, .past4:hover .pastdescription, .past5:hover .pastdescription {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg);
@@ -580,19 +589,23 @@ footer {
     transition: all 0.5s ease; }
 
 .past1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program1.jpg") no-repeat center center;
+  background: url("../image/icon1.svg") no-repeat center center;
   background-size: cover; }
 
 .past2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program2.jpg") no-repeat center center;
+  background: url("../image/icon2.svg") no-repeat center center;
   background-size: cover; }
 
 .past3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
+  background: url("../image/icon3.svg") no-repeat center center;
   background-size: cover; }
 
 .past4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
+  background: url("../image/icon4.svg") no-repeat center center;
+  background-size: cover; }
+
+.past5 {
+  background: url("../image/icon5.svg") no-repeat center center;
   background-size: cover; }
 
 .event1, .event2, .event3, .event4 {

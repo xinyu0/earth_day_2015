@@ -74,6 +74,19 @@ $gut: 3%;
 }
 }
 
+.col3a { 
+    width:100%;
+    height: 100px;
+    background: transparent;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 20px;
+
+    &:last-of-type {
+  	margin-right: 0;
+}
+}
+
 .col6f, .col6p, .col4a {
 	width:100%;
     background: transparent;
@@ -114,6 +127,9 @@ $gut: 3%;
   @include grid(2);
 }
 .col3 {
+  @include grid(3);
+}
+.col3a {
   @include grid(3);
 }
 
@@ -661,14 +677,14 @@ footer {
 }
 
 
-.past1, .past2, .past3, .past4 {
+.past1, .past2, .past3, .past4, .past5 {
 	padding-top: 2rem;
 	width:200px;
 	height:200px;
-	@include border-top-radius(50%);
-	@include border-right-radius(50%);
-	@include border-bottom-radius(50%);
-	@include border-left-radius(50%);
+	// @include border-top-radius(50%);
+	// @include border-right-radius(50%);
+	// @include border-bottom-radius(50%);
+	// @include border-left-radius(50%);
 	&:hover {
 		
 		.pastdescription {
@@ -688,25 +704,29 @@ footer {
 
 
 .past1 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program1.jpg") no-repeat center center;
+	background: url("../image/icon1.svg") no-repeat center center;
 	background-size:cover;
 }
 
 .past2 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program2.jpg") no-repeat center center;
+	background: url("../image/icon2.svg") no-repeat center center;
 	background-size:cover;
 }
 
 .past3 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program3.jpg") no-repeat center center;
+	background: url("../image/icon3.svg") no-repeat center center;
 	background-size:cover;
 }
 
 .past4 {
-	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/program3.jpg") no-repeat center center;
+	background: url("../image/icon4.svg") no-repeat center center;
 	background-size:cover;
 }
 
+.past5 {
+	background: url("../image/icon5.svg") no-repeat center center;
+	background-size:cover;
+}
 
 .event1, .event2, .event3, .event4 {
 	padding-top: 2rem;
