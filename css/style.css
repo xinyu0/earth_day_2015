@@ -199,6 +199,9 @@ body {
   width: 80%;
   margin: 0 auto;
   max-width: 960px; }
+  .wrapper1 h3 {
+    text-align: center;
+    font-size: 1.75rem; }
 
 .wrapper2 {
   width: 80%;
@@ -211,9 +214,9 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova-extra-condensed", sans-serif;
-  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 0.15em; }
+  letter-spacing: 0.15em;
+  line-height: 1.2; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none;
     color: black; }
@@ -228,8 +231,23 @@ h2 {
   padding-top: 1rem;
   clear: both; }
 
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.5rem; }
+
 h3 {
-  text-transform: uppercase; }
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1.25rem; }
+
+h6 {
+  font-size: 1rem; }
 
 .nav-toggle {
   float: left;
@@ -286,20 +304,20 @@ h3 {
     color: black; }
 
 .main {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/gulls1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/gulls1.jpg") no-repeat center center;
   background-size: cover; }
 
 .main2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/biking.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/biking.jpg") no-repeat center center;
   background-size: cover; }
 
 .main_program {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program.jpg") no-repeat center center;
   background-size: cover;
   padding-bottom: 2rem; }
 
 .main_about {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/pollution.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/pollution.jpg") no-repeat center center;
   background-size: cover;
   font-weight: 700; }
   .main_about p {
@@ -309,7 +327,7 @@ h3 {
     font-style: oblique; }
 
 .anniversary {
-  margin-top: 3rem;
+  margin-top: -200px;
   width: 150px;
   height: 150px;
   background: #51dad0;
@@ -375,13 +393,13 @@ h3 {
   right: 10px; }
 
 .program {
-  background: rgba(81, 218, 208, 0.5);
+  background: rgba(81, 218, 208, 0.7);
   overflow: hidden;
   clear: both;
   padding-bottom: 4rem; }
 
 .photogallery {
-  background: rgba(81, 218, 208, 0.5);
+  background: rgba(81, 218, 208, 0.7);
   overflow: hidden;
   clear: both; }
 
@@ -437,7 +455,7 @@ h3 {
     transition: all .5s ease; }
 
 .program1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
   .program1:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/program1.jpg") no-repeat center center;
@@ -447,7 +465,7 @@ h3 {
     transition: all .5s ease; }
 
 .program2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program2.jpg") no-repeat center center;
   background-size: cover; }
   .program2:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/program2.jpg") no-repeat center center;
@@ -457,7 +475,7 @@ h3 {
     transition: all .5s ease; }
 
 .program3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
   .program3:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/program3.jpg") no-repeat center center;
@@ -479,32 +497,32 @@ h3 {
   border-top-left-radius: 50%; }
 
 .partner1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/partner1.jpg") no-repeat center center;
   background-size: cover; }
 
 .partner2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/partner2.jpg") no-repeat center center;
   background-size: cover; }
 
 .partner3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner3.png") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/partner3.png") no-repeat center center;
   background-size: cover; }
 
 .partner4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner4.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/partner4.jpg") no-repeat center center;
   background-size: cover; }
 
 .partner5 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner5.png") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/partner5.png") no-repeat center center;
   background-size: cover; }
 
 .partner6 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/partner6.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/partner6.jpg") no-repeat center center;
   background-size: cover; }
 
 footer {
   clear: both;
-  background: rgba(81, 218, 208, 0.5);
+  background: rgba(81, 218, 208, 0.7);
   overflow: hidden; }
   footer nav {
     font-family: "proxima-nova-extra-condensed";
@@ -562,19 +580,19 @@ footer {
     transition: all 0.5s ease; }
 
 .past1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
 
 .past2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program2.jpg") no-repeat center center;
   background-size: cover; }
 
 .past3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .past4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .event1, .event2, .event3, .event4 {
@@ -591,19 +609,19 @@ footer {
     transition: all 0.5s ease; }
 
 .event1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
 
 .event2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program2.jpg") no-repeat center center;
   background-size: cover; }
 
 .event3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .event4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .location1, .location2, .location3, .location4 {
@@ -611,19 +629,19 @@ footer {
   height: 250px; }
 
 .location1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
 
 .location2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program2.jpg") no-repeat center center;
   background-size: cover; }
 
 .location3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .location4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 /* ====================================   
@@ -1160,6 +1178,19 @@ label {
   letter-spacing: 0.15em;
   padding: 10px; }
 
+.logo {
+  width: 170px;
+  margin-left: 40%;
+  margin-right: 40%; }
+
+.logo0 {
+  margin: 0 auto;
+  width: 100px;
+  height: 76px;
+  float: left;
+  background: url("../image/logo0.svg") no-repeat center center;
+  background-size: 50px; }
+
 .logo1 {
   width: 340px;
   height: 76px;
@@ -1173,6 +1204,12 @@ label {
   float: left;
   background: url("../image/logo2.svg") no-repeat center center, rgba(255, 255, 255, 0.8);
   background-size: 350px; }
+
+.logo_words h5 {
+  margin-top: 5px;
+  float: left;
+  text-transform: uppercase;
+  color: #dbf235; }
 
 #days, #hours, #minutes, #seconds {
   font-size: 2rem;
