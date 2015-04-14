@@ -2020,9 +2020,6 @@ label {
   font-style: oblique;
   font-size: 1.1rem; }
 
-* {
-  border: 1px solid red; }
-
 .note p {
   line-height: 1.5;
   vertical-align: center; }
