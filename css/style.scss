@@ -23,8 +23,8 @@ $body-font: "proxima-nova-soft";
 $header-font: "proxima-nova-extra-condensed";
 // media query
 
-$global:400px;
-$medium:800px;
+$global:502px;
+$medium:712px;
 $large:960px;
 
 
@@ -59,6 +59,8 @@ $gut: 3%;
   // padding: 40px;
   box-sizing:border-box;
   // color: #eeeeee;
+   
+
 }
 
 
@@ -76,6 +78,20 @@ $gut: 3%;
 }
 }
 
+// @media screen and (min-width: $global) {
+// 	.col1, .col2, .col3, .col4, .col5, .col6 { 
+//     width:45%;
+//     float: left;
+//     margin-right: 10%;
+//    &:nth-of-type(2){
+//   	margin-right: 0;}
+//   	   &:nth-of-type(3){
+//   	margin-right: 10%;}
+
+
+// }
+// }
+
 .col3a { 
     width:100%;
     height: 100px;
@@ -89,6 +105,18 @@ $gut: 3%;
 }
 }
 
+// @media screen and (min-width: $global) {
+// 	.col3a { 
+//     width:45%;
+//     float: left;
+//     margin-right: 10%;
+//    &:nth-of-type(2){
+//   	margin-right: 0;}
+//   	   &:nth-of-type(3){
+//   	margin-right: 10%;}
+
+// }
+// }
 .col2a { 
     width:100%;
     height: 100px;
@@ -101,7 +129,19 @@ $gut: 3%;
   	margin-right: 0;
 }
 }
+// @media screen and (min-width: $global) {
+// 	.col2a { 
+//    width:45%;
+//     float: left;
+//     margin-right: 10%;
+//    &:nth-of-type(2){
+//   	margin-right: 0;}
+//   	   &:nth-of-type(3){
+//   	margin-right: 10%;}
 
+
+// }
+// }
 .col6p, .col4a, .col4ab, .col6a {
 	width:100%;
     background: transparent;
@@ -117,6 +157,20 @@ $gut: 3%;
  
 }
 
+// @media screen and (min-width: $global) {
+// 	.col6p, .col4a, .col4ab, .col6a  { 
+//     width:45%;
+//     float: left;
+//     margin-right: 10%;
+//    &:nth-of-type(2){
+//   	margin-right: 0;}
+//   	   &:nth-of-type(3){
+//   	margin-right: 10%;}
+
+
+// }
+// }
+
 .col6f {
 	width:100%;
     background: transparent;
@@ -131,6 +185,19 @@ $gut: 3%;
  
 }
 
+// @media screen and (min-width: $global) {
+// 	.col6f  { 
+//     width:45%;
+//     float: left;
+//     margin-right: 10%;
+//    &:nth-of-type(2){
+//   	margin-right: 0;}
+//   	   &:nth-of-type(3){
+//   	margin-right: 10%;}
+
+
+// }
+// }
 .col4f, .col8f {
 	width:100%;
     background: transparent;
@@ -145,6 +212,20 @@ $gut: 3%;
  
 }
 
+// @media screen and (min-width: $global) {
+// 	.col4f, .col8f  { 
+//   width:45%;
+//     float: left;
+//     margin-right: 10%;
+//    &:nth-of-type(2){
+//   	margin-right: 0;}
+//   	   &:nth-of-type(3){
+//   	margin-right: 10%;}
+
+
+// }
+// }
+
 .col6e { 
     width:100%;
     height: 100px;
@@ -158,6 +239,20 @@ $gut: 3%;
 }
 }
 
+// @media screen and (min-width: $global) {
+// 	.col6e  { 
+//    width:45%;
+//     float: left;
+//     margin-right: 10%;
+//    &:nth-of-type(2){
+//   	margin-right: 0;}
+//   	   &:nth-of-type(3){
+//   	margin-right: 10%;}
+
+
+// }
+// }
+
 .col6ab { 
     width:100%;
     background: transparent;
@@ -168,7 +263,19 @@ $gut: 3%;
 }
 }
 
+// @media screen and (min-width: $global) {
+// 	.col6ab  { 
+//     width:45%;
+//     float: left;
+//     margin-right: 10%;
+//    &:nth-of-type(2){
+//   	margin-right: 0;}
+//   	   &:nth-of-type(3){
+//   	margin-right: 10%;}
 
+
+// }
+// }
 
 .col8a {
 	width:100%;
@@ -181,12 +288,25 @@ $gut: 3%;
     &:last-of-type {
   	margin-right: 0;
 }
- 
 }
+
+// @media screen and (min-width: $global) {
+// 	.col8a  { 
+//     width:45%;
+//     float: left;
+//     margin-right: 10%;
+//    &:nth-of-type(2){
+//   	margin-right: 0;}
+//   	   &:nth-of-type(3){
+//   	margin-right: 10%;}
+
+
+// }
+// }
 
 .col2p { 
     width:100%;
-    height: 100px;
+    height: 200px;
     background: transparent;
     margin-bottom: 5px;
     margin-bottom: 3rem;
@@ -197,7 +317,20 @@ $gut: 3%;
 }
 }
 
-@media screen and (min-width: 500px) {
+// @media screen and (min-width: $global) {
+// 	.col2p   { 
+//     width:45%;
+//     float: left;
+//     margin-right: 10%;
+//    &:nth-of-type(2){
+//   	margin-right: 0;}
+//   	   &:nth-of-type(3){
+//   	margin-right: 10%;}
+
+
+// }
+// }
+@media screen and (min-width: $medium) {
 
 .col2 {
   @include grid(2);
@@ -272,10 +405,9 @@ $gut: 3%;
 
 
 .wrapper { 
-	width:80%;
+	width:90%;
 	margin:0 auto;
-	max-width: 960px;
-	padding: 4rem 0;
+	padding: 2rem 0;
 	clear: both;
 	overflow: hidden;
 	p {
@@ -283,7 +415,50 @@ $gut: 3%;
 	}
 }
 
+@media screen and (min-width: $global) {
+	.wrapper { 
+	width:90%;
+	margin:0 auto;
+	padding: 3rem 0;
+	}
+}
+
+@media screen and (min-width: $medium) {
+	.wrapper {
+	width:80%;
+	margin:0 auto;
+	max-width: 960px;
+	padding: 4rem 0;
+}
+}
+
 .wrapper1 { 
+	width:90%;
+	margin:0 auto;
+	max-width: 960px;
+	padding: 6rem 0;
+	h3 {
+		text-align: center;
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (min-width: $global) {
+.wrapper1 { 
+	width:90%;
+	
+	max-width: 960px;
+	padding: 7rem 0;
+h3 {
+		text-align: center;
+		font-size: 1.50rem;
+	}
+}
+
+}
+
+@media screen and (min-width: $medium) {
+	.wrapper1 { 
 	width:80%;
 	margin:0 auto;
 	max-width: 960px;
@@ -293,14 +468,22 @@ $gut: 3%;
 		font-size: 1.75rem;
 	}
 }
+}
 
+.wrapper2 { 
+	width:90%;
+	margin:0 auto;
+	max-width: 960px;
+	padding: 3rem 0;}
+
+@media screen and (min-width: $medium) {
 .wrapper2 { 
 	width:80%;
 	margin:0 auto;
-	max-width: 960px;
+
 	padding: 4rem 0;
 	// clear: both;
-}
+}}
 
 .wrapper_p { 
 	width:80%;
@@ -328,42 +511,7 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-h1 {
-	text-align: center;
-	// font-style: italic;
-	font-size: 4rem;
-	padding: 8rem 0 4rem 0;
-	letter-spacing: 0.1em;
-	// clear:both;
-	span {
-		color:white;
-	}
-}
 
-h2 {
-	font-size: 2rem;
-	padding-bottom:1rem;
-	text-transform: uppercase;
-	clear: both;
-	letter-spacing: 0.1em;
-}
-
-h3 {
-	// text-transform: uppercase;
-	letter-spacing: 0.05em;
-}
-
-h4 {
-	letter-spacing: 0.07em;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-}
 
 h3 {
     font-size: 2rem;
@@ -381,6 +529,77 @@ h6 {
     font-size: 1rem;
 }
 
+h1 {
+	text-align: center;
+	// font-style: italic;
+	font-size: 2.5rem;
+	padding: 4rem 0 2rem 0;
+	letter-spacing: 0.1em;
+	// clear:both;
+	span {
+		color:white;
+	}
+}
+
+@media screen and (min-width: $global) {
+	h1 {
+	font-size: 3rem;
+	padding: 8rem 0 4rem 0;
+	
+}}
+
+@media screen and (min-width: $medium) {
+	h1 {
+	font-size: 4rem;
+	padding: 8rem 0 4rem 0;
+}
+}
+
+h2 {
+	font-size: 1.75rem;
+	padding-bottom:1rem;
+	text-transform: uppercase;
+	clear: both;
+	letter-spacing: 0.1em;
+}
+
+@media screen and (min-width: $global) {
+	h2 {
+	font-size: 2rem;
+}}
+
+@media screen and (min-width: $medium) {
+	h2 {
+	font-size: 2.5rem;
+}}
+
+
+h3 {
+	font-size: 1.5rem;
+
+}
+
+@media screen and (min-width: $global) {
+	h3 {
+	font-size: 1.75rem;
+}}
+
+@media screen and (min-width: $medium) {
+	h3 {
+	font-size: 2rem;
+}}
+
+h3 {
+	// text-transform: uppercase;
+	letter-spacing: 0.07em;
+}
+
+h4 {
+	letter-spacing: 0.07em;
+}
+
+
+
 
 .nav-toggle {
 	float:left;
@@ -389,7 +608,7 @@ h6 {
 	text-transform: uppercase;
 	letter-spacing: 0.10em;
 	color: black;
-	padding:15px;
+	padding:12px;
 	font-weight: 700;
 	
 	line-height: 46px;
@@ -527,7 +746,30 @@ h6 {
 }
 
 .anniversary {
-	margin-top: -200px;
+	// margin-top: 150px;
+	width:120px;
+	height: 120px;
+	background: $secondary-color;
+	text-align: center;
+	font-family: $header-font;
+	text-transform: uppercase;
+	font-size: 1rem;
+	line-height: 1;
+	padding-top: 10px;
+	letter-spacing: 0.10em;
+	margin: 0 auto;
+	clear: both;
+	padding: 1.5rem;
+	
+	@include border-top-radius(50%);
+	@include border-right-radius(50%);
+	@include border-bottom-radius(50%);
+	@include border-left-radius(50%);
+
+}
+@media screen and (min-width: $global) {
+	.anniversary {
+	margin-top: -400px;
 	width:150px;
 	height: 150px;
 	background: $secondary-color;
@@ -547,16 +789,40 @@ h6 {
 	@include border-bottom-radius(50%);
 	@include border-left-radius(50%);
 
+}}
+
+
+@media screen and (min-width: 567px) {
+	.anniversary {
+	margin-top: -325px;}}
+
+@media screen and (min-width: $medium) {
+	.anniversary {
+	margin-top: -500px;
+
+}}
+
+@media screen and (min-width: 812px) {
+	.anniversary {
+	margin-top: -370px;
+
+}}
+
+
+.anniversary1 {
+	
+	font-size:2.5rem;
+
+	font-weight: 500;
 }
 
-
-
+@media screen and (min-width: $global) {
 .anniversary1 {
 	
 	font-size:3.5rem;
 
 	font-weight: 500;
-}
+}}
 
 .anniversary2 {
 
@@ -753,8 +1019,11 @@ h6 {
 	font-weight: 700;
 	width: 100%;
 	line-height: 1.2;
-	margin-top:100px;
+	// margin-top:100px;
 	font-size: 1.5rem;
+	a {
+		line-height: 1.2;
+	}
 }
 
 .leaderdescription {
@@ -1074,42 +1343,46 @@ h6 {
 	}
 }
  .partner {
- 	// width: 100px;
- 	height: 100px;
+ 	height: 150px;
+ 	// width:200px;
+ 	margin: 10px auto;
+
  	@include border-top-radius(5px);
 	@include border-right-radius(5px);
 	@include border-bottom-radius(5px);
 	@include border-left-radius(5px);
  }
 
+
+
 .partner1 {
 	background: url("../image/partner1.jpg") no-repeat center center;
-	background-size:cover;
+	background-size:200px;
 }
 
 .partner2 {
 	background: url("../image/partner2.jpg") no-repeat center center;
-	background-size:cover;
+	background-size:200px;
 }
 
 .partner3 {
 	background: url("../image/partner3.jpg") no-repeat center center;
-	background-size:cover;
+	background-size:200px;
 }
 
 .partner4 {
 	background: url("../image/partner4.jpg") no-repeat center center;
-	background-size:cover;
+	background-size:200px;
 }
 
 .partner5 {
 	background: url("../image/partner5.jpg") no-repeat center center;
-	background-size:cover;
+	background-size:200px;
 }
 
 .partner6 {
 	background: url("../image/partner6.jpg") no-repeat center center;
-	background-size:cover;
+	background-size:200px;
 }
 
 
@@ -1304,28 +1577,39 @@ footer {
 
 
 .logo0 {
-	// margin-left: 20px;
 	
-	width:200px;
-	height: 76px;
+	width:48px;
+	height: 70px;
 	float: left;
 	// margin-left: 30%;
+	background: url("../image/logo0.png") no-repeat center left, white;
+	background-size: 200px;
+}
+
+@media screen and (min-width: $global) {
+	.logo0 {
+	
+	width:200px;
+	
 	background: url("../image/logo0.png") no-repeat center center, white;
-	background-size: 180px;
+	background-size: 200px;
+}
 }
 
 #days, #hours, #minutes, #seconds {
   font-size: 2rem;
 	float: left;}
 
+
+
 #timer {
-	width: 210px;
+	width: 205px;
 	height: 70px;
 	background: $primary-color;
 	margin: 0 auto;
 	display: inline-block;
   	line-height: 1;
- 	padding: 6px;
+ 	padding: 6px 5px;
   	font-family: $header-font;
 	text-transform: uppercase;
 	letter-spacing: 0.10em;
@@ -1347,9 +1631,9 @@ footer {
 }
 
 
-// * {
-// 	border: 1px solid red;
-// }
+* {
+	border: 1px solid red;
+}
 
 .note p {
 	line-height: 1.5;

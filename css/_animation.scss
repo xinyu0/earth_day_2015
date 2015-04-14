@@ -54,10 +54,10 @@
 	margin: 20px 0 0; }
 .link_lg a.btn { 
 	color: #222;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	background: white;
 	text-decoration: none;
-	padding: 10px 50px 10px 50px; 
+	padding: 10px 20px; 
 	display: inline-block; 
 	*display: inline;
 	*zoom: 1;
@@ -319,7 +319,7 @@ socialmedia
 .get ul li { display: inline-block; *display: inline;
 *zoom: 1;
  }
-.get ul li a { display: block; color: black; font-family: $header-font, sans-serif; font-weight: 700; line-height: 40px; letter-spacing: 0.1em; text-decoration: none; text-transform: uppercase; position: relative; overflow: hidden; }
+.get ul li a { display: block; color: black; font-family: $header-font, sans-serif; font-weight: 700;  letter-spacing: 0.1em; text-decoration: none; text-transform: uppercase; position: relative; overflow: hidden; }
 .get ul li a:before { position: absolute; right: 0; bottom: 0px; left: 0px; display: block; border-bottom: black 2px solid; content: ""; z-index: 2; webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; -webkit-transform: translate(-100%, 0px); -moz-transform: translate(-100%, 0px); -o-transform: translate(-100%, 0px); -ms-transform: translate(-100%, 0px); transform: translate(-100%, 0px); }
 .get ul li a:hover:before { -webkit-transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -o-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); transform: translate(0%, 0%); }
 .get ul li a:after { position: absolute; right: 0; top: 0px; left: 0; display: block; border-bottom: black 2px solid; content: ""; z-index: 2; webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform: translate(100%, 0px); -moz-transform: translate(100%, 0px); -o-transform: translate(100%, 0px); -ms-transform: translate(100%, 0px); transform: translate(100%, 0px); }
@@ -331,17 +331,17 @@ socialmedia
 
 // 
 // 
-.get1 ul li { display: inline-block; *display: inline;
+.get1  { display: inline-block; *display: inline; line-height: 1.2;
 *zoom: 1;
  }
-.get1 ul li a { display: block; color: black; font-size: 1.1rem;
-	font-family: $header-font, sans-serif; font-weight: 700; line-height: 1.5; letter-spacing: 0.1em; text-decoration: none; text-transform: uppercase; position: relative; overflow: hidden; }
-.get1 ul li a:before { position: absolute; right: 0; bottom: 0px; left: 0px; display: block; border-bottom: black 2px solid; content: ""; z-index: 2; webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; -webkit-transform: translate(-100%, 0px); -moz-transform: translate(-100%, 0px); -o-transform: translate(-100%, 0px); -ms-transform: translate(-100%, 0px); transform: translate(-100%, 0px); }
-.get1 ul li a:hover:before { -webkit-transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -o-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); transform: translate(0%, 0%); }
-.get1 ul li a:after { position: absolute; right: 0; top: 0px; left: 0; display: block; border-bottom: black 2px solid; content: ""; z-index: 2; webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform: translate(100%, 0px); -moz-transform: translate(100%, 0px); -o-transform: translate(100%, 0px); -ms-transform: translate(100%, 0px); transform: translate(100%, 0px); }
-.get1 ul li a:hover:after { -webkit-transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -o-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); transform: translate(0%, 0%); }
+.get1 a { line-height: 1.2; display: block; color: black; font-size: 1.1rem;
+	font-family: $header-font, sans-serif; font-weight: 700; letter-spacing: 0.1em; text-decoration: none; text-transform: uppercase; position: relative; overflow: hidden; }
+.get1  a:before { position: absolute; right: 0; bottom: 0px; left: 0px; display: block; border-bottom: black 2px solid; content: ""; z-index: 2; webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; -webkit-transform: translate(-100%, 0px); -moz-transform: translate(-100%, 0px); -o-transform: translate(-100%, 0px); -ms-transform: translate(-100%, 0px); transform: translate(-100%, 0px); }
+.get1 a:hover:before { -webkit-transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -o-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); transform: translate(0%, 0%); }
+.get1 a:after { position: absolute; right: 0; top: 0px; left: 0; display: block; border-bottom: black 2px solid; content: ""; z-index: 2; webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform: translate(100%, 0px); -moz-transform: translate(100%, 0px); -o-transform: translate(100%, 0px); -ms-transform: translate(100%, 0px); transform: translate(100%, 0px); }
+.get1 a:hover:after { -webkit-transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -o-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); transform: translate(0%, 0%); }
 
-.get1 ul li a:hover { color: black; background: transparent; 
+.get1 a:hover { color: black; background: transparent; 
 
 }
 
@@ -356,5 +356,23 @@ socialmedia
 .try a:hover:after { -webkit-transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -o-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); transform: translate(0%, 0%); }
 
 .try a:hover { color: black; background: transparent; 
+
+}
+
+.get ul li { display: inline-block; *display: inline;
+*zoom: 1;
+ }
+.get ul li a { display: block; color: #222; font-family: $header-font, sans-serif; font-weight: 700; line-height: 40px; letter-spacing: 0.1em; text-decoration: none; text-transform: uppercase; position: relative; overflow: hidden; }
+.get ul li a:before { position: absolute; right: 0; bottom: 0px; left: 0px; display: block; border-bottom: black 2px solid; content: ""; z-index: 2; webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; -webkit-transform: translate(-100%, 0px); -moz-transform: translate(-100%, 0px); -o-transform: translate(-100%, 0px); -ms-transform: translate(-100%, 0px); transform: translate(-100%, 0px); }
+.get ul li a:hover:before { -webkit-transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -o-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); transform: translate(0%, 0%); }
+.get ul li a:after { position: absolute; right: 0; top: 0px; left: 0; display: block; border-bottom: black 2px solid; content: ""; z-index: 2; webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform: translate(100%, 0px); -moz-transform: translate(100%, 0px); -o-transform: translate(100%, 0px); -ms-transform: translate(100%, 0px); transform: translate(100%, 0px); }
+.get ul li a:hover:after { -webkit-transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -o-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); transform: translate(0%, 0%); }
+
+.get ul li a:hover { color: black; background: transparent; 
+	// // &:nth-of-type(2) {
+	// // background: transparent;
+	// // color:black;
+	
+	//  }
 
 }
