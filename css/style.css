@@ -101,12 +101,13 @@ body {
 
 .col1, .col2, .col3, .col4, .col5, .col6 {
   width: 100%;
-  height: 100px;
+  height: 50px;
   background: transparent;
   margin-bottom: 5px;
   text-align: center;
   padding: 20px;
-  border: 10px white solid; }
+  border: 10px white solid;
+  margin-bottom: 3rem; }
   .col1:last-of-type, .col2:last-of-type, .col3:last-of-type, .col4:last-of-type, .col5:last-of-type, .col6:last-of-type {
     margin-right: 0; }
 
@@ -116,7 +117,8 @@ body {
   background: transparent;
   margin-bottom: 5px;
   text-align: center;
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 3rem; }
   .col3a:last-of-type {
     margin-right: 0; }
 
@@ -126,7 +128,8 @@ body {
   background: transparent;
   margin-bottom: 5px;
   text-align: center;
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 3rem; }
   .col2a:last-of-type {
     margin-right: 0; }
 
@@ -134,7 +137,8 @@ body {
   width: 100%;
   background: transparent;
   margin-bottom: 5px;
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 3rem; }
   .col6p:last-of-type, .col4a:last-of-type, .col4ab:last-of-type, .col6a:last-of-type {
     margin-right: 0; }
 
@@ -142,8 +146,18 @@ body {
   width: 100%;
   background: transparent;
   margin-bottom: 0;
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 3rem; }
   .col6f:last-of-type {
+    margin-right: 0; }
+
+.col4f, .col8f {
+  width: 100%;
+  background: transparent;
+  margin-bottom: 0;
+  height: 40px;
+  margin-bottom: 1.5rem; }
+  .col4f:last-of-type, .col8f:last-of-type {
     margin-right: 0; }
 
 .col6e {
@@ -151,6 +165,7 @@ body {
   height: 100px;
   background: transparent;
   margin-bottom: 5px;
+  margin-bottom: 3rem;
   text-align: center;
   padding: 20px; }
   .col6e:last-of-type {
@@ -159,14 +174,16 @@ body {
 .col6ab {
   width: 100%;
   background: transparent;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  margin-bottom: 3rem; }
   .col6ab:last-of-type {
     margin-right: 0; }
 
 .col8a {
   width: 100%;
   background: transparent;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  margin-bottom: 3rem; }
   .col8a:last-of-type {
     margin-right: 0; }
 
@@ -175,6 +192,7 @@ body {
   height: 100px;
   background: transparent;
   margin-bottom: 5px;
+  margin-bottom: 3rem;
   text-align: center;
   padding: 20px; }
   .col2p:last-of-type {
@@ -185,84 +203,79 @@ body {
     width: 14.16%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col2a {
     width: 14.16%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
+
+  .col4f {
+    width: 31.32%;
+    float: left;
+    margin-right: 3%;
+    box-sizing: border-box;
+    height: 40px; }
 
   .col2p {
     width: 14.16%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col3 {
     width: 22.74%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col3a {
     width: 22.74%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col4 {
     width: 31.32%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col4a {
     width: 31.32%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col4ab {
     width: 31.32%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col8a {
     width: 65.64%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col6 {
     width: 48.48%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col6e {
     width: 48.48%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col6f {
     width: 48.48%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box;
     margin-bottom: 0; }
 
@@ -270,27 +283,32 @@ body {
     width: 48.48%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col6a {
     width: 48.48%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
     box-sizing: border-box; }
 
   .col6ab {
     width: 48.48%;
     float: left;
     margin-right: 3%;
-    margin-bottom: 3rem;
-    box-sizing: border-box; } }
+    box-sizing: border-box; }
+
+  .col8f {
+    width: 65.64%;
+    float: left;
+    margin-right: 3%;
+    box-sizing: border-box;
+    height: 40px; } }
 .wrapper {
   width: 80%;
   margin: 0 auto;
   max-width: 960px;
   padding: 4rem 0;
+  clear: both;
   overflow: hidden; }
   .wrapper p {
     font-size: 1.1rem; }
@@ -299,7 +317,7 @@ body {
   width: 80%;
   margin: 0 auto;
   max-width: 960px;
-  padding: 6rem 0; }
+  padding: 8rem 0; }
   .wrapper1 h3 {
     text-align: center;
     font-size: 1.75rem; }
@@ -325,7 +343,6 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova-extra-condensed", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.15em;
   line-height: 1.2; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none;
@@ -334,13 +351,23 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   text-align: center;
   font-size: 4rem;
-  padding: 8rem 0 4rem 0; }
+  padding: 8rem 0 4rem 0;
+  letter-spacing: 0.1em; }
+  h1 span {
+    color: white; }
 
 h2 {
   font-size: 2rem;
   padding-bottom: 1rem;
   text-transform: uppercase;
-  clear: both; }
+  clear: both;
+  letter-spacing: 0.1em; }
+
+h3 {
+  letter-spacing: 0.05em; }
+
+h4 {
+  letter-spacing: 0.07em; }
 
 h1 {
   font-size: 3rem; }
@@ -365,7 +392,7 @@ h6 {
   background: white;
   font-family: "proxima-nova-extra-condensed";
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   color: black;
   padding: 15px;
   font-weight: 700;
@@ -387,7 +414,7 @@ h6 {
     font-family: "proxima-nova-extra-condensed";
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.10em;
     font-size: 1.1rem; }
 
 @media screen and (min-width: 625px) {
@@ -415,19 +442,32 @@ h6 {
     color: black; }
 
 .main {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/gulls1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/gulls1.jpg") no-repeat center center;
   background-size: cover; }
 
+.main_event {
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/start2.jpg") no-repeat center center;
+  background-size: cover; }
+
+.hmm {
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/find.jpg") no-repeat top center;
+  background-size: cover;
+  padding-bottom: 4rem; }
+
 .main2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/biking.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/biking.jpg") no-repeat center center;
   background-size: cover; }
 
 .main_program {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/mainprogram.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/mainprogram.jpg") no-repeat center center;
+  background-size: cover; }
+
+.main_organize {
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/organize.jpg") no-repeat center center;
   background-size: cover; }
 
 .main_about {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/smile.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/earthypic.jpg") no-repeat center center;
   background-size: cover;
   font-weight: 700; }
   .main_about p {
@@ -448,7 +488,7 @@ h6 {
   font-size: 1.2rem;
   line-height: 1;
   padding-top: 10px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   float: left;
   clear: both;
   padding: 1.5rem;
@@ -460,8 +500,13 @@ h6 {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%; }
-  .anniversary span {
-    font-size: 3.5rem; }
+
+.anniversary1 {
+  font-size: 3.5rem;
+  font-weight: 500; }
+
+.anniversary2 {
+  font-weight: 700; }
 
 .issue {
   background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)); }
@@ -507,20 +552,20 @@ h6 {
   padding: 15px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   text-align: center;
   position: fixed;
   bottom: 10px;
   right: 10px; }
 
 .program {
-  background: rgba(81, 218, 208, 0.7);
+  background: rgba(81, 218, 208, 0.8);
   overflow: hidden;
   clear: both;
   padding-bottom: 4rem; }
 
 .photogallery {
-  background: rgba(81, 218, 208, 0.7);
+  background: rgba(81, 218, 208, 0.8);
   overflow: hidden;
   clear: both; }
 
@@ -533,8 +578,11 @@ h6 {
   font-family: "proxima-nova-extra-condensed";
   float: right;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   text-align: center;
+  line-height: 1.2;
+  padding-top: 15px;
+  padding-left: 3px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -556,7 +604,7 @@ h6 {
   font-family: "proxima-nova-extra-condensed";
   float: left;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   padding: 20px 5px 5px 5px;
   text-align: center;
   border-top-left-radius: 50%;
@@ -580,7 +628,7 @@ h6 {
   font-family: "proxima-nova-extra-condensed";
   float: left;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   padding: 20px 5px 5px 5px;
   text-align: center;
   border-top-left-radius: 50%;
@@ -594,16 +642,42 @@ h6 {
   margin-left: 0px;
   margin-top: 150px; }
 
-.description, .pastdescription {
+.description {
   color: #dbf235;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   vertical-align: center;
   font-family: "proxima-nova-extra-condensed";
   font-weight: 700;
   width: 100%;
   margin-top: 30%;
   margin-bottom: 40%;
+  padding: 10px;
+  font-size: 1.5rem; }
+
+.pastdescription {
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  vertical-align: center;
+  font-family: "proxima-nova-extra-condensed";
+  font-weight: 700;
+  width: 100%;
+  line-height: 1.2;
+  margin-top: 100px;
+  font-size: 1.5rem; }
+
+.leaderdescription {
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  vertical-align: center;
+  font-family: "proxima-nova-extra-condensed";
+  font-weight: 700;
+  width: 100%;
+  margin-top: 30%;
+  margin-bottom: 40%;
+  line-height: 1.2;
   padding: 10px;
   font-size: 1.5rem; }
 
@@ -617,6 +691,22 @@ h6 {
     -o-transition: all .5s ease;
     transition: all .5s ease; }
   .program1:hover .description, .program2:hover .description, .program3:hover .description, .program4:hover .description {
+    color: black;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+
+.location1, .location2, .location3, .location4, .location5, .location6, .location7, .location8 {
+  padding-top: 2rem;
+  height: 300px; }
+  .location1:hover, .location2:hover, .location3:hover, .location4:hover, .location5:hover, .location6:hover, .location7:hover, .location8:hover {
+    border: 10px #51dad0 solid;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  .location1:hover .description, .location2:hover .description, .location3:hover .description, .location4:hover .description, .location5:hover .description, .location6:hover .description, .location7:hover .description, .location8:hover .description {
     color: black;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -671,6 +761,94 @@ h6 {
 .program3a {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
+
+.location1 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/austin.jpg") no-repeat center center;
+  background-size: cover; }
+  .location1:hover {
+    background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/austin.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+
+.location2 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/houston.jpg") no-repeat center center;
+  background-size: cover; }
+  .location2:hover {
+    background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/houston.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+
+.location3 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/portland.jpg") no-repeat center center;
+  background-size: cover; }
+  .location3:hover {
+    background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/portland.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+
+.location4 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/seattle.jpg") no-repeat center center;
+  background-size: cover; }
+  .location4:hover {
+    background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/seattle.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+
+.location5 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/paris.jpg") no-repeat center center;
+  background-size: cover; }
+  .location5:hover {
+    background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/paris.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+
+.location6 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/tokyo.jpg") no-repeat center center;
+  background-size: cover; }
+  .location6:hover {
+    background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/tokyo.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+
+.location7 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/mumbai.jpg") no-repeat center center;
+  background-size: cover; }
+  .location7:hover {
+    background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/mumbai.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+
+.location8 {
+  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/shanghai.jpg") no-repeat center center;
+  background-size: cover; }
+  .location8:hover {
+    background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/shanghai.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
 
 .pg1, .pg2, .pg3, .pg4, .pg5, .pg6 {
   height: 300px; }
@@ -778,7 +956,7 @@ h6 {
 
 footer {
   clear: both;
-  background: rgba(81, 218, 208, 0.7);
+  background: rgba(81, 218, 208, 0.8);
   overflow: hidden; }
   footer h3 {
     padding-bottom: 1rem; }
@@ -828,6 +1006,16 @@ footer {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
+  .past1:hover .leaderdescription, .past2:hover .leaderdescription, .past3:hover .leaderdescription, .past4:hover .leaderdescription, .past5:hover .leaderdescription {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
 
 .past1 {
   background: url("../image/icon1.svg") no-repeat center center;
@@ -863,40 +1051,24 @@ footer {
     transition: all 0.5s ease; }
 
 .event1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
 
 .event2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/program2.jpg") no-repeat center center;
   background-size: cover; }
 
 .event3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .event4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .location1, .location2, .location3, .location4 {
   padding-top: 2rem;
   height: 250px; }
-
-.location1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program1.jpg") no-repeat center center;
-  background-size: cover; }
-
-.location2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program2.jpg") no-repeat center center;
-  background-size: cover; }
-
-.location3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
-  background-size: cover; }
-
-.location4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
-  background-size: cover; }
 
 /* ====================================   
    .link
@@ -927,7 +1099,7 @@ footer {
   text-align: center;
   font-family: "proxima-nova-extra-condensed";
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   line-height: 55px;
   text-transform: uppercase;
   -moz-border-radius: 3px;
@@ -990,7 +1162,7 @@ footer {
   text-align: center;
   font-family: "proxima-nova-extra-condensed";
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   line-height: 55px;
   text-transform: uppercase;
   -moz-border-radius: 3px;
@@ -1057,7 +1229,7 @@ footer {
   content: "top";
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   line-height: 80px;
   text-indent: 0;
   -webkit-transition: all 0.3s ease;
@@ -1558,7 +1730,79 @@ socialmedia
   color: black;
   background: transparent; }
 
-.organize input {
+.try {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+.try a {
+  display: block;
+  color: black;
+  font-family: "proxima-nova-extra-condensed", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden; }
+
+.try a:before {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  border-bottom: black 2px solid;
+  content: "";
+  z-index: 2;
+  webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translate(-100%, 0px);
+  -moz-transform: translate(-100%, 0px);
+  -o-transform: translate(-100%, 0px);
+  -ms-transform: translate(-100%, 0px);
+  transform: translate(-100%, 0px); }
+
+.try a:hover:before {
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%); }
+
+.try a:after {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  left: 0;
+  display: block;
+  border-bottom: black 2px solid;
+  content: "";
+  z-index: 2;
+  webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(100%, 0px);
+  -moz-transform: translate(100%, 0px);
+  -o-transform: translate(100%, 0px);
+  -ms-transform: translate(100%, 0px);
+  transform: translate(100%, 0px); }
+
+.try a:hover:after {
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%); }
+
+.try a:hover {
+  color: black;
+  background: transparent; }
+
+.organize input, .organize textarea, .organize select {
   background: #f5f5f5;
   font-size: 1rem;
   -moz-border-radius: 3px;
@@ -1567,60 +1811,28 @@ socialmedia
   border: none;
   padding: 13px 10px;
   width: 330px;
-  margin-bottom: 20px;
   box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
   clear: both;
   font-size: 1rem; }
 
-::placeholder {
-  color: black; }
-
 label {
-  font-family: "proxima-nova-extra-condensed", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  padding: 10px; }
-
-.logo {
-  width: 170px;
-  margin-left: 40%;
-  margin-right: 40%; }
+  letter-spacing: 0.07em;
+  line-height: 1.2;
+  font-size: 1.25rem; }
 
 .logo0 {
-  margin: 0 auto;
-  width: 100px;
+  width: 200px;
   height: 76px;
   float: left;
-  background: url("../image/logo0.svg") no-repeat center center;
-  background-size: 50px; }
-
-.logo1 {
-  width: 340px;
-  height: 76px;
-  float: left;
-  background: url("../image/logo1.svg") no-repeat center center, white;
-  background-size: 300px; }
-
-.logo2 {
-  width: 400px;
-  height: 76px;
-  float: left;
-  background: url("../image/logo2.svg") no-repeat center center, rgba(255, 255, 255, 0.8);
-  background-size: 350px; }
-
-.logo_words h5 {
-  margin-top: 5px;
-  float: left;
-  text-transform: uppercase;
-  color: #dbf235; }
+  background: url("../image/logo0.png") no-repeat center center, white;
+  background-size: 180px; }
 
 #days, #hours, #minutes, #seconds {
   font-size: 2rem;
   float: left; }
 
 #timer {
-  width: 230px;
+  width: 210px;
   height: 70px;
   background: #dbf235;
   margin: 0 auto;
@@ -1629,7 +1841,7 @@ label {
   padding: 6px;
   font-family: "proxima-nova-extra-condensed";
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   text-align: center;
   overflow: hidden;
   float: right; }
@@ -1642,5 +1854,12 @@ label {
   padding-top: 5px;
   font-style: oblique;
   font-size: 1.1rem; }
+
+.note p {
+  line-height: 1.5;
+  vertical-align: center; }
+  .note p a {
+    color: black;
+    font-style: oblique; }
 
 /*# sourceMappingURL=style.css.map */
