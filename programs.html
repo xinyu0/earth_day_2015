@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 	<meta charset="utf-8">
 	<title>Earth Day 2015</title>
@@ -11,6 +11,7 @@
 	<meta name="robots" content="all">
 	<script src="//use.typekit.net/uby2qma.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+	<script src="js/modernizr.js"></script>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
 				</ul>
 
 			</nav>
-			<div class="logo"><div class="logo0"></div></div>
+			<div class="logo0"></div>
 		
 		<div id="timer">
 			  <div id="days"><h3></h3></div>
@@ -122,11 +123,13 @@
 <div class="col6p">
 	<h2>Climate Education Week
 	</h2>
-	<h4>18–25 April 2015</h4>
-		<h4></h4>
+	<h4>18–25 April 2015</h4><br><br>
 
+	<div class="vendor">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/MGzwCYJqNps" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<div class="col6p program2a">
+		</div>
+		<div class="col6p1 program2a">
 
 		</div>
 		<p>
@@ -226,6 +229,14 @@ Union Station is the third most visited tourist attraction in the world, just be
 
 <script>
   var nav = responsiveNav(".nav-collapse");
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+      <script>
+        // Basic FitVids Test
+        $(".vendor").fitVids();
+        // Custom selector and No-Double-Wrapping Prevention Test
+        $(".vendor").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
 </script>
 </body>
 </html>

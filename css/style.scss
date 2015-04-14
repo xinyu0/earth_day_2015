@@ -157,6 +157,22 @@ $gut: 3%;
  
 }
 
+.col6p1 {
+	width:100%;
+    background: transparent;
+    margin-bottom: 5px;
+    // text-align: center;
+    padding: 20px;
+    height: 600px;
+    // overflow: hidden;;
+    margin-bottom: 3rem;
+    &:last-of-type {
+  	margin-right: 0;
+
+}
+ 
+}
+
 // @media screen and (min-width: $global) {
 // 	.col6p, .col4a, .col4ab, .col6a  { 
 //     width:45%;
@@ -198,10 +214,25 @@ $gut: 3%;
 
 // }
 // }
-.col4f, .col8f {
+.col4f {
 	width:100%;
     background: transparent;
     margin-bottom: 0;
+    height: 40px;
+    clear: both;
+    padding-top: 1rem;
+    // margin-bottom: 0.5rem;
+    // text-align: center;
+    // overflow: hidden;;
+    &:last-of-type {
+  	margin-right: 0;
+}
+ 
+}
+
+.col8f {
+	width:100%;
+    background: transparent;
     height: 40px;
     margin-bottom: 1.5rem;
     // text-align: center;
@@ -256,10 +287,10 @@ $gut: 3%;
 .col6ab { 
     width:100%;
     background: transparent;
-    margin-bottom: 5px;
-    margin-bottom: 3rem;
+    
     &:last-of-type {
   	margin-right: 0;
+  	margin-bottom: 3rem;
 }
 }
 
@@ -341,10 +372,13 @@ $gut: 3%;
 .col4f {
   @include grid(4);
   height: 40px;
+  margin-bottom: 1.5rem;
 }
+
 .col2p {
   @include grid(2);
 }
+
 .col3 {
   @include grid(3);
 }
@@ -384,6 +418,9 @@ $gut: 3%;
 .col6p  {
   @include grid(6);
 }
+.col6p1  {
+  @include grid(6);
+}
 
 .col6a  {
   @include grid(6);
@@ -396,6 +433,7 @@ $gut: 3%;
 .col8f  {
   @include grid(8);
   height: 40px;
+  margin-bottom: 1.5rem;
 }
 }
 
@@ -440,13 +478,14 @@ $gut: 3%;
 	h3 {
 		text-align: center;
 		font-size: 1.25rem;
+		line-height: 1.6;
+		padding-top: 1rem;
 	}
 }
 
 @media screen and (min-width: $global) {
 .wrapper1 { 
 	width:90%;
-	
 	max-width: 960px;
 	padding: 7rem 0;
 h3 {
@@ -462,7 +501,7 @@ h3 {
 	width:80%;
 	margin:0 auto;
 	max-width: 960px;
-	padding: 8rem 0;
+	padding: 7rem 0;
 	h3 {
 		text-align: center;
 		font-size: 1.75rem;
@@ -740,9 +779,9 @@ h4 {
 		font-size:1.1rem;
 		padding-bottom: 2rem;}
 	span {
-		font-size: 1.4rem;
-		font-style: oblique;
-	}
+		font-size: 1.5rem;}
+	// 	font-style: oblique;
+	// }
 }
 
 .anniversary {
@@ -945,7 +984,7 @@ h4 {
 	@include border-right-radius(50%);
 	@include border-bottom-radius(50%);
 	@include border-left-radius(50%);
-	margin-right: -55px;
+	margin-right: -40px;
 	margin-top: -70px;
 }
 
@@ -1038,7 +1077,7 @@ h4 {
 	margin-top: 30%;
 	margin-bottom: 40%;
 	line-height: 1.2;
-	padding:10px;
+	padding:5px;
 	font-size: 1.5rem;
 }
 
@@ -1079,9 +1118,10 @@ h4 {
 	-o-transition: all .5s ease; 
 	transition: all .5s ease;
 	}
+
 	&:hover {
 		
-		.description {
+		a {
 		color:black;
 
 		-webkit-transition: all .5s ease; 
@@ -1147,8 +1187,8 @@ h4 {
 }
 
 .program2a {
-	background: linear-gradient($secondary-color3, $secondary-color3), url("../image/program2.jpg") no-repeat center center;
-	background-size:cover;
+	background: url("../image/program2.jpg") no-repeat center center,linear-gradient($secondary-color3, $secondary-color3);
+	background-size:250px;
 	
 }
 
@@ -1343,9 +1383,9 @@ h4 {
 	}
 }
  .partner {
- 	height: 150px;
+ 	height: 200px;
  	// width:200px;
- 	margin: 10px auto;
+ 	// margin: 10px auto;
 
  	@include border-top-radius(5px);
 	@include border-right-radius(5px);
@@ -1353,38 +1393,125 @@ h4 {
 	@include border-left-radius(5px);
  }
 
+// @media screen and (min-width: $medium) {
+
+//  .partner {
+//  	height: 200px;
+//  	// width:200px;
+//  	margin: 10px auto;
+
+//  	@include border-top-radius(5px);
+// 	@include border-right-radius(5px);
+// 	@include border-bottom-radius(5px);
+// 	@include border-left-radius(5px);
+//  }
+// }
 
 
 .partner1 {
-	background: url("../image/partner1.jpg") no-repeat center center;
+	background: url("../image/partner1.png") no-repeat center center;
 	background-size:200px;
+}
+
+@media screen and (min-width: $medium) {
+	.partner1 {
+	background: url("../image/partner1.png") no-repeat center center;
+	background-size:80px;
+}
+}
+
+@media screen and (min-width:840px ) {
+	.partner1 {
+	background: url("../image/partner1.png") no-repeat center center;
+	background-size:100px;
+}
 }
 
 .partner2 {
-	background: url("../image/partner2.jpg") no-repeat center center;
+	background: url("../image/partner2.png") no-repeat center center;
 	background-size:200px;
 }
+@media screen and (min-width: $medium) {
+	.partner2 {
+	background: url("../image/partner2.png") no-repeat center center;
+	background-size:80px;
+}
+}
 
+@media screen and (min-width:840px ) {
+	.partner2 {
+	background: url("../image/partner2.png") no-repeat center center;
+	background-size:100px;
+}
+}
 .partner3 {
-	background: url("../image/partner3.jpg") no-repeat center center;
+	background: url("../image/partner3.png") no-repeat center center;
 	background-size:200px;
 }
+@media screen and (min-width: $medium) {
+	.partner3 {
+	background: url("../image/partner3.png") no-repeat center center;
+	background-size:80px;
+}
+}
 
+@media screen and (min-width:840px ) {
+	.partner3 {
+	background: url("../image/partner3.png") no-repeat center center;
+	background-size:100px;
+}
+}
 .partner4 {
-	background: url("../image/partner4.jpg") no-repeat center center;
+	background: url("../image/partner4.png") no-repeat center center;
 	background-size:200px;
 }
+@media screen and (min-width: $medium) {
+	.partner4 {
+	background: url("../image/partner4.png") no-repeat center center;
+	background-size:80px;
+}
+}
 
+@media screen and (min-width:840px ) {
+	.partner4 {
+	background: url("../image/partner4.png") no-repeat center center;
+	background-size:100px;
+}
+}
 .partner5 {
-	background: url("../image/partner5.jpg") no-repeat center center;
+	background: url("../image/partner5.png") no-repeat center center;
 	background-size:200px;
 }
+@media screen and (min-width: $medium) {
+	.partner5 {
+	background: url("../image/partner5.png") no-repeat center center;
+	background-size:80px;
+}
+}
 
+@media screen and (min-width:840px ) {
+	.partner5 {
+	background: url("../image/partner5.png") no-repeat center center;
+	background-size:100px;
+}
+}
 .partner6 {
-	background: url("../image/partner6.jpg") no-repeat center center;
+	background: url("../image/partner6.png") no-repeat center center;
 	background-size:200px;
 }
+@media screen and (min-width: $medium) {
+	.partner6 {
+	background: url("../image/partner6.png") no-repeat center center;
+	background-size:80px;
+}
+}
 
+@media screen and (min-width:840px ) {
+	.partner6 {
+	background: url("../image/partner6.png") no-repeat center center;
+	background-size:100px;
+}
+}
 
 
 footer {
@@ -1643,3 +1770,28 @@ footer {
 		font-style: oblique;
 	}
 }
+
+video {
+            max-width: 100%;
+            height: auto;
+          }
+
+          iframe,
+          embed,
+          object {
+            max-width: 100%;
+          }
+
+          .container {
+            width: 70%;
+            padding: 5%;
+            margin:0 auto;
+            // background:#fff;
+            // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+          }
+
+          .vendor {
+            padding: 2%;
+            background: $primary-color;
+            // margin-bottom: 2em;
+          }

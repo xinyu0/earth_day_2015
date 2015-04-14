@@ -57,6 +57,9 @@ table {
   width: 100%;
   display: block; }
 
+.nav-collapse li a {
+  vertical-align: center; }
+
 .js .nav-collapse {
   clip: rect(0 0 0 0);
   max-height: 0;
@@ -142,6 +145,16 @@ body {
   .col6p:last-of-type, .col4a:last-of-type, .col4ab:last-of-type, .col6a:last-of-type {
     margin-right: 0; }
 
+.col6p1 {
+  width: 100%;
+  background: transparent;
+  margin-bottom: 5px;
+  padding: 20px;
+  height: 600px;
+  margin-bottom: 3rem; }
+  .col6p1:last-of-type {
+    margin-right: 0; }
+
 .col6f {
   width: 100%;
   background: transparent;
@@ -151,13 +164,22 @@ body {
   .col6f:last-of-type {
     margin-right: 0; }
 
-.col4f, .col8f {
+.col4f {
   width: 100%;
   background: transparent;
   margin-bottom: 0;
   height: 40px;
+  clear: both;
+  padding-top: 1rem; }
+  .col4f:last-of-type {
+    margin-right: 0; }
+
+.col8f {
+  width: 100%;
+  background: transparent;
+  height: 40px;
   margin-bottom: 1.5rem; }
-  .col4f:last-of-type, .col8f:last-of-type {
+  .col8f:last-of-type {
     margin-right: 0; }
 
 .col6e {
@@ -173,11 +195,10 @@ body {
 
 .col6ab {
   width: 100%;
-  background: transparent;
-  margin-bottom: 5px;
-  margin-bottom: 3rem; }
+  background: transparent; }
   .col6ab:last-of-type {
-    margin-right: 0; }
+    margin-right: 0;
+    margin-bottom: 3rem; }
 
 .col8a {
   width: 100%;
@@ -216,7 +237,8 @@ body {
     float: left;
     margin-right: 3%;
     box-sizing: border-box;
-    height: 40px; }
+    height: 40px;
+    margin-bottom: 1.5rem; }
 
   .col2p {
     width: 14.16%;
@@ -285,6 +307,12 @@ body {
     margin-right: 3%;
     box-sizing: border-box; }
 
+  .col6p1 {
+    width: 48.48%;
+    float: left;
+    margin-right: 3%;
+    box-sizing: border-box; }
+
   .col6a {
     width: 48.48%;
     float: left;
@@ -302,7 +330,8 @@ body {
     float: left;
     margin-right: 3%;
     box-sizing: border-box;
-    height: 40px; } }
+    height: 40px;
+    margin-bottom: 1.5rem; } }
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -330,7 +359,9 @@ body {
   padding: 6rem 0; }
   .wrapper1 h3 {
     text-align: center;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    line-height: 1.6;
+    padding-top: 1rem; }
 
 @media screen and (min-width: 502px) {
   .wrapper1 {
@@ -345,7 +376,7 @@ body {
     width: 80%;
     margin: 0 auto;
     max-width: 960px;
-    padding: 8rem 0; }
+    padding: 7rem 0; }
     .wrapper1 h3 {
       text-align: center;
       font-size: 1.75rem; } }
@@ -523,8 +554,7 @@ h4 {
     font-size: 1.1rem;
     padding-bottom: 2rem; }
   .main_about span {
-    font-size: 1.4rem;
-    font-style: oblique; }
+    font-size: 1.5rem; }
 
 .anniversary {
   width: 120px;
@@ -676,7 +706,7 @@ h4 {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
-  margin-right: -55px;
+  margin-right: -40px;
   margin-top: -70px; }
 
 .date2 {
@@ -764,7 +794,7 @@ h4 {
   margin-top: 30%;
   margin-bottom: 40%;
   line-height: 1.2;
-  padding: 10px;
+  padding: 5px;
   font-size: 1.5rem; }
 
 .program1, .program2, .program3, .program4 {
@@ -792,7 +822,7 @@ h4 {
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease; }
-  .location1:hover .description, .location2:hover .description, .location3:hover .description, .location4:hover .description, .location5:hover .description, .location6:hover .description, .location7:hover .description, .location8:hover .description {
+  .location1:hover a, .location2:hover a, .location3:hover a, .location4:hover a, .location5:hover a, .location6:hover a, .location7:hover a, .location8:hover a {
     color: black;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -841,8 +871,8 @@ h4 {
   background-size: cover; }
 
 .program2a {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.jpg") no-repeat center center;
-  background-size: cover; }
+  background: url("../image/program2.jpg") no-repeat center center, linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5));
+  background-size: 250px; }
 
 .program3a {
   background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
@@ -1006,8 +1036,7 @@ h4 {
     transition: all .5s ease; }
 
 .partner {
-  height: 150px;
-  margin: 10px auto;
+  height: 200px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1018,29 +1047,77 @@ h4 {
   border-top-left-radius: 5px; }
 
 .partner1 {
-  background: url("../image/partner1.jpg") no-repeat center center;
+  background: url("../image/partner1.png") no-repeat center center;
   background-size: 200px; }
 
+@media screen and (min-width: 712px) {
+  .partner1 {
+    background: url("../image/partner1.png") no-repeat center center;
+    background-size: 80px; } }
+@media screen and (min-width: 840px) {
+  .partner1 {
+    background: url("../image/partner1.png") no-repeat center center;
+    background-size: 100px; } }
 .partner2 {
-  background: url("../image/partner2.jpg") no-repeat center center;
+  background: url("../image/partner2.png") no-repeat center center;
   background-size: 200px; }
 
+@media screen and (min-width: 712px) {
+  .partner2 {
+    background: url("../image/partner2.png") no-repeat center center;
+    background-size: 80px; } }
+@media screen and (min-width: 840px) {
+  .partner2 {
+    background: url("../image/partner2.png") no-repeat center center;
+    background-size: 100px; } }
 .partner3 {
-  background: url("../image/partner3.jpg") no-repeat center center;
+  background: url("../image/partner3.png") no-repeat center center;
   background-size: 200px; }
 
+@media screen and (min-width: 712px) {
+  .partner3 {
+    background: url("../image/partner3.png") no-repeat center center;
+    background-size: 80px; } }
+@media screen and (min-width: 840px) {
+  .partner3 {
+    background: url("../image/partner3.png") no-repeat center center;
+    background-size: 100px; } }
 .partner4 {
-  background: url("../image/partner4.jpg") no-repeat center center;
+  background: url("../image/partner4.png") no-repeat center center;
   background-size: 200px; }
 
+@media screen and (min-width: 712px) {
+  .partner4 {
+    background: url("../image/partner4.png") no-repeat center center;
+    background-size: 80px; } }
+@media screen and (min-width: 840px) {
+  .partner4 {
+    background: url("../image/partner4.png") no-repeat center center;
+    background-size: 100px; } }
 .partner5 {
-  background: url("../image/partner5.jpg") no-repeat center center;
+  background: url("../image/partner5.png") no-repeat center center;
   background-size: 200px; }
 
+@media screen and (min-width: 712px) {
+  .partner5 {
+    background: url("../image/partner5.png") no-repeat center center;
+    background-size: 80px; } }
+@media screen and (min-width: 840px) {
+  .partner5 {
+    background: url("../image/partner5.png") no-repeat center center;
+    background-size: 100px; } }
 .partner6 {
-  background: url("../image/partner6.jpg") no-repeat center center;
+  background: url("../image/partner6.png") no-repeat center center;
   background-size: 200px; }
 
+@media screen and (min-width: 712px) {
+  .partner6 {
+    background: url("../image/partner6.png") no-repeat center center;
+    background-size: 80px; } }
+@media screen and (min-width: 840px) {
+  .partner6 {
+    background: url("../image/partner6.png") no-repeat center center;
+    background-size: 100px; } }
 footer {
   clear: both;
   background: rgba(81, 218, 208, 0.8);
@@ -1670,78 +1747,6 @@ socialmedia
   color: black;
   background: transparent; }
 
-.get ul li {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1; }
-
-.get ul li a {
-  display: block;
-  color: black;
-  font-family: "proxima-nova-extra-condensed", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: relative;
-  overflow: hidden; }
-
-.get ul li a:before {
-  position: absolute;
-  right: 0;
-  bottom: 0px;
-  left: 0px;
-  display: block;
-  border-bottom: black 2px solid;
-  content: "";
-  z-index: 2;
-  webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: translate(-100%, 0px);
-  -moz-transform: translate(-100%, 0px);
-  -o-transform: translate(-100%, 0px);
-  -ms-transform: translate(-100%, 0px);
-  transform: translate(-100%, 0px); }
-
-.get ul li a:hover:before {
-  -webkit-transform: translate(0%, 0%);
-  -moz-transform: translate(0%, 0%);
-  -o-transform: translate(0%, 0%);
-  -ms-transform: translate(0%, 0%);
-  transform: translate(0%, 0%); }
-
-.get ul li a:after {
-  position: absolute;
-  right: 0;
-  top: 0px;
-  left: 0;
-  display: block;
-  border-bottom: black 2px solid;
-  content: "";
-  z-index: 2;
-  webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transform: translate(100%, 0px);
-  -moz-transform: translate(100%, 0px);
-  -o-transform: translate(100%, 0px);
-  -ms-transform: translate(100%, 0px);
-  transform: translate(100%, 0px); }
-
-.get ul li a:hover:after {
-  -webkit-transform: translate(0%, 0%);
-  -moz-transform: translate(0%, 0%);
-  -o-transform: translate(0%, 0%);
-  -ms-transform: translate(0%, 0%);
-  transform: translate(0%, 0%); }
-
-.get ul li a:hover {
-  color: black;
-  background: transparent; }
-
 .get1 {
   display: inline-block;
   *display: inline;
@@ -1976,10 +1981,15 @@ socialmedia
   font-size: 1rem; }
 
 label {
-  letter-spacing: 0.07em;
+  letter-spacing: 0.05em;
   line-height: 1.2;
-  font-size: 1.25rem; }
+  font-size: 1rem; }
 
+@media screen and (min-width: 712px) {
+  label {
+    letter-spacing: 0.07em;
+    line-height: 1.2;
+    font-size: 1.25rem; } }
 .logo0 {
   width: 48px;
   height: 70px;
@@ -2026,5 +2036,23 @@ label {
   .note p a {
     color: black;
     font-style: oblique; }
+
+video {
+  max-width: 100%;
+  height: auto; }
+
+iframe,
+embed,
+object {
+  max-width: 100%; }
+
+.container {
+  width: 70%;
+  padding: 5%;
+  margin: 0 auto; }
+
+.vendor {
+  padding: 2%;
+  background: #dbf235; }
 
 /*# sourceMappingURL=style.css.map */
