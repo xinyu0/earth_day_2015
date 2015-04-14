@@ -259,12 +259,16 @@ $gut: 3%;
 
 .col6e { 
     width:100%;
-    height: 100px;
+    
     background: transparent;
     margin-bottom: 5px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
     padding: 20px;
+    h5 {
+    	line-height: 1.6;
+    }
+
     &:last-of-type {
   	margin-right: 0;
 }
@@ -348,6 +352,17 @@ $gut: 3%;
 }
 }
 
+.col12 { 
+    width:100%;
+    
+    background: transparent;
+    text-align: center;
+    padding-bottom: 3rem;
+    &:last-of-type {
+  	margin-right: 0;
+}
+}
+
 // @media screen and (min-width: $global) {
 // 	.col2p   { 
 //     width:45%;
@@ -409,6 +424,7 @@ $gut: 3%;
 
 .col6e {
   @include grid(6);
+  margin-bottom: 1rem;
 }
 
 .col6f  {
@@ -430,6 +446,10 @@ $gut: 3%;
   @include grid(6);
 }
 
+.col12  {
+  @include grid(12);
+ padding-bottom: 0;
+}
 .col8f  {
   @include grid(8);
   height: 40px;
@@ -1042,11 +1062,25 @@ h4 {
 	font-family: $header-font;
 	font-weight: 700;
 	width: 100%;
-	margin-top: 30%;
-	margin-bottom: 40%;
+	margin:0 auto;
+	margin-top: 10%;
+	margin-bottom: 20%;
+
 	padding:10px;
 	font-size: 1.5rem;
 }
+
+
+
+@media screen and (min-width: $medium) {
+	.description {
+	margin-top: 30%;
+font-size: 1rem;}}
+
+@media screen and (min-width: 870px) {
+	.description {
+	
+font-size: 1.5rem;}}
 
 .pastdescription {
 	// background: white;
@@ -1539,7 +1573,7 @@ footer {
 		width: 100%;
 		// text-align: center;
 		clear: both;
-		margin-top: 2.5rem;
+		// margin-top: 2.5rem;
 	}
 }
 
@@ -1716,7 +1750,7 @@ footer {
 @media screen and (min-width: $global) {
 	.logo0 {
 	
-	width:200px;
+	width:220px;
 	
 	background: url("../image/logo0.png") no-repeat center center, white;
 	background-size: 200px;

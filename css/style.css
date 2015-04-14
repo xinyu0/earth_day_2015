@@ -184,12 +184,13 @@ body {
 
 .col6e {
   width: 100%;
-  height: 100px;
   background: transparent;
   margin-bottom: 5px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
   padding: 20px; }
+  .col6e h5 {
+    line-height: 1.6; }
   .col6e:last-of-type {
     margin-right: 0; }
 
@@ -217,6 +218,14 @@ body {
   text-align: center;
   padding: 20px; }
   .col2p:last-of-type {
+    margin-right: 0; }
+
+.col12 {
+  width: 100%;
+  background: transparent;
+  text-align: center;
+  padding-bottom: 3rem; }
+  .col12:last-of-type {
     margin-right: 0; }
 
 @media screen and (min-width: 712px) {
@@ -292,7 +301,8 @@ body {
     width: 48.48%;
     float: left;
     margin-right: 3%;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin-bottom: 1rem; }
 
   .col6f {
     width: 48.48%;
@@ -324,6 +334,13 @@ body {
     float: left;
     margin-right: 3%;
     box-sizing: border-box; }
+
+  .col12 {
+    width: 99.96%;
+    float: left;
+    margin-right: 3%;
+    box-sizing: border-box;
+    padding-bottom: 0; }
 
   .col8f {
     width: 65.64%;
@@ -765,11 +782,19 @@ h4 {
   font-family: "proxima-nova-extra-condensed";
   font-weight: 700;
   width: 100%;
-  margin-top: 30%;
-  margin-bottom: 40%;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 20%;
   padding: 10px;
   font-size: 1.5rem; }
 
+@media screen and (min-width: 712px) {
+  .description {
+    margin-top: 30%;
+    font-size: 1rem; } }
+@media screen and (min-width: 870px) {
+  .description {
+    font-size: 1.5rem; } }
 .pastdescription {
   color: #222;
   text-transform: uppercase;
@@ -1133,8 +1158,7 @@ footer {
       padding: 5px; }
   footer p {
     width: 100%;
-    clear: both;
-    margin-top: 2.5rem; }
+    clear: both; }
 
 #email {
   width: 100%;
@@ -1999,7 +2023,7 @@ label {
 
 @media screen and (min-width: 502px) {
   .logo0 {
-    width: 200px;
+    width: 220px;
     background: url("../image/logo0.png") no-repeat center center, white;
     background-size: 200px; } }
 #days, #hours, #minutes, #seconds {
