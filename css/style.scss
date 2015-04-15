@@ -811,6 +811,12 @@ h4 {
 	// padding-bottom: 2rem;
 }
 
+.how {
+	background: linear-gradient($primary-color2, $primary-color2), url("../image/how.jpg") no-repeat center center;
+	background-size:cover;
+	// background-attachment: fixed;
+	// padding-bottom: 2rem;
+}
 .main_program {
 	background: linear-gradient($secondary-color2, $secondary-color2), url("../image/mainprogram.jpg") no-repeat center center;
 	background-size:cover;
