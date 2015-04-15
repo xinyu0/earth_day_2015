@@ -1862,6 +1862,7 @@ socialmedia
   background: transparent; }
 
 .line {
+  padding-top: 1rem;
   display: inline-block;
   *display: inline;
   line-height: 1.5;
