@@ -901,7 +901,7 @@ h4 {
 
 .location1, .location2, .location3, .location4, .location5, .location6, .location7, .location8 {
   padding-top: 2rem;
-  height: 300px; }
+  height: 250px; }
   .location1:hover, .location2:hover, .location3:hover, .location4:hover, .location5:hover, .location6:hover, .location7:hover, .location8:hover {
     border: 10px #51dad0 solid;
     -webkit-transition: all .5s ease;
@@ -1310,8 +1310,7 @@ footer {
   background-size: cover; }
 
 .location1, .location2, .location3, .location4 {
-  padding-top: 2rem;
-  height: 250px; }
+  padding-top: 2rem; }
 
 .link_lg a.btn:hover span,
 .link_lg a.btn:focus span {
