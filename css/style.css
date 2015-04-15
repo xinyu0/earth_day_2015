@@ -100,7 +100,10 @@ html {
 body {
   font-family: "proxima-nova-soft",sans-serif;
   line-height: 1.6;
-  background: #dbf235 url(blossoms.jpg) no-repeat bottom right; }
+  background: #dbf235; }
+
+p {
+  font-size: 1.4rem; }
 
 .col1, .col2, .col3, .col4, .col5, .col6 {
   width: 100%;
@@ -127,32 +130,43 @@ body {
 
 .col2a {
   width: 100%;
-  height: 100px;
   background: transparent;
   margin-bottom: 5px;
   text-align: center;
-  padding: 20px;
   margin-bottom: 3rem; }
   .col2a:last-of-type {
     margin-right: 0; }
 
-.col6p, .col4a, .col4ab, .col6a {
+.col6p, .col4a, .col4ab, .col6a, .col4ac {
   width: 100%;
   background: transparent;
   margin-bottom: 5px;
   padding: 20px;
   margin-bottom: 3rem; }
-  .col6p:last-of-type, .col4a:last-of-type, .col4ab:last-of-type, .col6a:last-of-type {
+  .col6p:last-of-type, .col4a:last-of-type, .col4ab:last-of-type, .col6a:last-of-type, .col4ac:last-of-type {
     margin-right: 0; }
+
+.col4ac {
+  border: 10px white solid;
+  min-height: 300px;
+  margin-top: 2rem;
+  text-align: center; }
 
 .col6p1 {
   width: 100%;
   background: transparent;
-  margin-bottom: 5px;
   padding: 20px;
   height: 600px;
   margin-bottom: 3rem; }
   .col6p1:last-of-type {
+    margin-right: 0; }
+
+.col6p2 {
+  width: 100%;
+  background: transparent;
+  margin-bottom: 5px;
+  padding: 20px; }
+  .col6p2:last-of-type {
     margin-right: 0; }
 
 .col6f {
@@ -285,6 +299,12 @@ body {
     margin-right: 3%;
     box-sizing: border-box; }
 
+  .col4ac {
+    width: 31.32%;
+    float: left;
+    margin-right: 3%;
+    box-sizing: border-box; }
+
   .col8a {
     width: 65.64%;
     float: left;
@@ -292,6 +312,12 @@ body {
     box-sizing: border-box; }
 
   .col6 {
+    width: 48.48%;
+    float: left;
+    margin-right: 3%;
+    box-sizing: border-box; }
+
+  .col6p2 {
     width: 48.48%;
     float: left;
     margin-right: 3%;
@@ -362,17 +388,19 @@ body {
   .wrapper {
     width: 90%;
     margin: 0 auto;
-    padding: 3rem 0; } }
+    padding: 3rem 0; }
+    .wrapper p {
+      font-size: 1.3rem; } }
 @media screen and (min-width: 712px) {
   .wrapper {
     width: 80%;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 750px;
     padding: 4rem 0; } }
 .wrapper1 {
   width: 90%;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 750px;
   padding: 6rem 0; }
   .wrapper1 h3 {
     text-align: center;
@@ -383,7 +411,7 @@ body {
 @media screen and (min-width: 502px) {
   .wrapper1 {
     width: 90%;
-    max-width: 960px;
+    max-width: 750px;
     padding: 7rem 0; }
     .wrapper1 h3 {
       text-align: center;
@@ -392,7 +420,7 @@ body {
   .wrapper1 {
     width: 80%;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 750px;
     padding: 7rem 0; }
     .wrapper1 h3 {
       text-align: center;
@@ -400,7 +428,7 @@ body {
 .wrapper2 {
   width: 90%;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 750px;
   padding: 3rem 0; }
 
 @media screen and (min-width: 712px) {
@@ -411,8 +439,8 @@ body {
 .wrapper_p {
   width: 80%;
   margin: 0 auto;
-  max-width: 960px;
-  padding: 4rem 0 8rem 0;
+  max-width: 750px;
+  padding: 4rem 0;
   overflow: hidden; }
   .wrapper_p p {
     font-size: 1.1rem; }
@@ -479,10 +507,10 @@ h3 {
   h3 {
     font-size: 2rem; } }
 h3 {
-  letter-spacing: 0.07em; }
+  letter-spacing: 0.04em; }
 
 h4 {
-  letter-spacing: 0.07em; }
+  letter-spacing: 0.04em; }
 
 .nav-toggle {
   float: left;
@@ -502,9 +530,9 @@ h4 {
     transition: all 1s ease; }
 
 .nav-collapse li {
-  padding: 25.8px 0;
+  padding: 10px 20px;
   width: 100%;
-  text-align: center; }
+  text-align: left; }
   .nav-collapse li a {
     color: black;
     font-weight: 700;
@@ -516,8 +544,10 @@ h4 {
 
 @media screen and (min-width: 625px) {
   .nav-collapse li {
+    padding: 25.8px 0;
     width: 18%;
-    display: inline-block; } }
+    display: inline-block;
+    text-align: center; } }
 .click li {
   float: right;
   background: white;
@@ -539,40 +569,42 @@ h4 {
     color: black; }
 
 .main {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/gulls1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/gulls1.jpg") no-repeat center center;
   background-size: cover; }
 
 .main_event {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/start2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/start2.jpg") no-repeat center center;
   background-size: cover; }
 
 .hmm {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/find.jpg") no-repeat top center;
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/find.jpg") no-repeat top center;
   background-size: cover;
   padding-bottom: 4rem; }
 
 .main2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/biking.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/biking.jpg") no-repeat center center;
   background-size: cover; }
 
 .main_program {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/mainprogram.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/mainprogram.jpg") no-repeat center center;
   background-size: cover; }
 
 .main_organize {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/organize.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/organize.jpg") no-repeat center center;
   background-size: cover; }
 
 .main_about {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/earthypic.jpg") no-repeat center center;
-  background-size: cover;
-  font-weight: 700; }
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/earthypic.jpg") no-repeat center center;
+  background-size: cover; }
   .main_about p {
     font-size: 1.1rem;
     padding-bottom: 2rem; }
   .main_about span {
     font-size: 1.5rem; }
 
+@media screen and (min-width: 712px) {
+  .main_about p {
+    font-size: 1.3rem; } }
 .anniversary {
   width: 120px;
   height: 120px;
@@ -643,8 +675,6 @@ h4 {
 .issue {
   background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)); }
   .issue p {
-    font-size: 1.1rem;
-    font-weight: 700;
     letter-spacing: 0.05em; }
 
 .main_program1 {
@@ -655,6 +685,9 @@ h4 {
     font-size: 1.1rem;
     letter-spacing: 0.05em; }
 
+@media screen and (min-width: 712px) {
+  .main_program1 p {
+    font-size: 1.3rem; } }
 .what {
   background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7));
   overflow: hidden; }
@@ -675,6 +708,9 @@ h4 {
   min-height: 400px;
   background: url("../image/smile.jpg") no-repeat center center;
   background-size: cover; }
+  .col6a span {
+    font-family: "proxima-nova-extra-condensed";
+    font-weight: 700; }
 
 .border {
   border: 10px #dbf235 solid; }
@@ -691,13 +727,13 @@ h4 {
   right: 10px; }
 
 .program {
-  background: rgba(81, 218, 208, 0.8);
+  background: rgba(81, 218, 208, 0.9);
   overflow: hidden;
   clear: both;
   padding-bottom: 4rem; }
 
 .photogallery {
-  background: rgba(81, 218, 208, 0.8);
+  background: rgba(81, 218, 208, 0.9);
   overflow: hidden;
   clear: both; }
 
@@ -724,6 +760,31 @@ h4 {
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
   margin-right: -40px;
+  margin-top: -70px; }
+
+.date1 {
+  background: #fd4857;
+  color: white;
+  width: 70px;
+  height: 70px;
+  font-size: 1.2rem;
+  font-family: "proxima-nova-extra-condensed";
+  float: right;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 22px;
+  padding-left: 3px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  margin-right: -30px;
   margin-top: -70px; }
 
 .date2 {
@@ -859,7 +920,7 @@ h4 {
   height: 300px; }
 
 .program1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
   .program1:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/program1.jpg") no-repeat center center;
@@ -870,7 +931,7 @@ h4 {
     transition: all .5s ease; }
 
 .program2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program2.jpg") no-repeat center center;
   background-size: cover; }
   .program2:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/program2.jpg") no-repeat center center;
@@ -881,7 +942,7 @@ h4 {
     transition: all .5s ease; }
 
 .program3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
   .program3:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/program3.jpg") no-repeat center center;
@@ -892,19 +953,19 @@ h4 {
     transition: all .5s ease; }
 
 .program1a {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
 
 .program2a {
-  background: url("../image/program2.jpg") no-repeat center center, linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5));
+  background: url("../image/program2.jpg") no-repeat center center, linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7));
   background-size: 250px; }
 
 .program3a {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .location1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/austin.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/austin.jpg") no-repeat center center;
   background-size: cover; }
   .location1:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/austin.jpg") no-repeat center center;
@@ -915,7 +976,7 @@ h4 {
     transition: all .5s ease; }
 
 .location2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/houston.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/houston.jpg") no-repeat center center;
   background-size: cover; }
   .location2:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/houston.jpg") no-repeat center center;
@@ -926,7 +987,7 @@ h4 {
     transition: all .5s ease; }
 
 .location3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/portland.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/portland.jpg") no-repeat center center;
   background-size: cover; }
   .location3:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/portland.jpg") no-repeat center center;
@@ -937,7 +998,7 @@ h4 {
     transition: all .5s ease; }
 
 .location4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/seattle.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/seattle.jpg") no-repeat center center;
   background-size: cover; }
   .location4:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/seattle.jpg") no-repeat center center;
@@ -948,7 +1009,7 @@ h4 {
     transition: all .5s ease; }
 
 .location5 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/paris.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/paris.jpg") no-repeat center center;
   background-size: cover; }
   .location5:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/paris.jpg") no-repeat center center;
@@ -959,7 +1020,7 @@ h4 {
     transition: all .5s ease; }
 
 .location6 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/tokyo.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/tokyo.jpg") no-repeat center center;
   background-size: cover; }
   .location6:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/tokyo.jpg") no-repeat center center;
@@ -970,7 +1031,7 @@ h4 {
     transition: all .5s ease; }
 
 .location7 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/mumbai.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/mumbai.jpg") no-repeat center center;
   background-size: cover; }
   .location7:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/mumbai.jpg") no-repeat center center;
@@ -981,7 +1042,7 @@ h4 {
     transition: all .5s ease; }
 
 .location8 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/shanghai.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/shanghai.jpg") no-repeat center center;
   background-size: cover; }
   .location8:hover {
     background: linear-gradient(rgba(232, 244, 9, 0.7), rgba(232, 244, 9, 0.7)), url("../image/shanghai.jpg") no-repeat center center;
@@ -995,7 +1056,7 @@ h4 {
   height: 300px; }
 
 .pg1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/pg1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/pg1.jpg") no-repeat center center;
   background-size: cover; }
   .pg1:hover {
     background: url("../image/pg1.jpg") no-repeat center center;
@@ -1006,7 +1067,7 @@ h4 {
     transition: all .5s ease; }
 
 .pg2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/pg2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/pg2.jpg") no-repeat center center;
   background-size: cover; }
   .pg2:hover {
     background: url("../image/pg2.jpg") no-repeat center center;
@@ -1017,7 +1078,7 @@ h4 {
     transition: all .5s ease; }
 
 .pg3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/pg3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/pg3.jpg") no-repeat center center;
   background-size: cover; }
   .pg3:hover {
     background: url("../image/pg3.jpg") no-repeat center center;
@@ -1028,7 +1089,7 @@ h4 {
     transition: all .5s ease; }
 
 .pg4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/pg4.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/pg4.jpg") no-repeat center center;
   background-size: cover; }
   .pg4:hover {
     background: url("../image/pg4.jpg") no-repeat center center;
@@ -1039,7 +1100,7 @@ h4 {
     transition: all .5s ease; }
 
 .pg5 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/pg5.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/pg5.jpg") no-repeat center center;
   background-size: cover; }
   .pg5:hover {
     background: url("../image/pg5.jpg") no-repeat center center;
@@ -1050,7 +1111,7 @@ h4 {
     transition: all .5s ease; }
 
 .pg6 {
-  background: linear-gradient(rgba(81, 218, 208, 0.5), rgba(81, 218, 208, 0.5)), url("../image/pg6.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/pg6.jpg") no-repeat center center;
   background-size: cover; }
   .pg6:hover {
     background: url("../image/pg6.jpg") no-repeat center center;
@@ -1145,7 +1206,7 @@ h4 {
     background-size: 100px; } }
 footer {
   clear: both;
-  background: rgba(81, 218, 208, 0.8);
+  background: rgba(81, 218, 208, 0.9);
   overflow: hidden; }
   footer h3 {
     padding-bottom: 1rem; }
@@ -1181,9 +1242,8 @@ footer {
   height: 40px; }
 
 .past1, .past2, .past3, .past4, .past5 {
-  padding-top: 2rem;
-  width: 150px;
-  height: 150px; }
+  height: 150px;
+  margin: 0 auto; }
   .past1:hover .pastdescription, .past2:hover .pastdescription, .past3:hover .pastdescription, .past4:hover .pastdescription, .past5:hover .pastdescription {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -1195,11 +1255,6 @@ footer {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   .past1:hover .leaderdescription, .past2:hover .leaderdescription, .past3:hover .leaderdescription, .past4:hover .leaderdescription, .past5:hover .leaderdescription {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -1207,23 +1262,23 @@ footer {
 
 .past1 {
   background: url("../image/icon1.svg") no-repeat center center;
-  background-size: cover; }
+  background-size: 100px; }
 
 .past2 {
   background: url("../image/icon2.svg") no-repeat center center;
-  background-size: cover; }
+  background-size: 100px; }
 
 .past3 {
   background: url("../image/icon3.svg") no-repeat center center;
-  background-size: cover; }
+  background-size: 100px; }
 
 .past4 {
   background: url("../image/icon4.svg") no-repeat center center;
-  background-size: cover; }
+  background-size: 100px; }
 
 .past5 {
   background: url("../image/icon5.svg") no-repeat center center;
-  background-size: cover; }
+  background-size: 100px; }
 
 .event1, .event2, .event3, .event4 {
   padding-top: 2rem; }
@@ -1239,28 +1294,25 @@ footer {
     transition: all 0.5s ease; }
 
 .event1 {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/program1.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
 
 .event2 {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/program2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/program2.jpg") no-repeat center center;
   background-size: cover; }
 
 .event3 {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .event4 {
-  background: linear-gradient(rgba(81, 218, 208, 0.8), rgba(81, 218, 208, 0.8)), url("../image/program3.jpg") no-repeat center center;
+  background: linear-gradient(rgba(81, 218, 208, 0.9), rgba(81, 218, 208, 0.9)), url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .location1, .location2, .location3, .location4 {
   padding-top: 2rem;
   height: 250px; }
 
-/* ====================================   
-   .link
-   ==================================== */
 .link_lg a.btn:hover span,
 .link_lg a.btn:focus span {
   -webkit-transform: translateY(-100%);
@@ -1435,16 +1487,6 @@ footer {
   -ms-transform: translate(0px, -5px);
   transform: translate(0px, -5px); }
 
-/* ==============================   
-   .navArea
-   ============================== */
-/*#header .navArea ul li { display: inline-block; *display: inline;*zoom: 1;}
-#header .navArea ul li a { display: block; padding: 0 15px; color: #222; font-size: 14px; font-family: "futura-pt", sans-serif; font-weight: 700; line-height: 40px; letter-spacing: 0.1em; text-decoration: none; text-transform: uppercase; position:relative; }
-
-#header .navArea ul li a:before { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; display: block; border-left: #71cdd8 2px solid; border-right: $primary-color 2px solid; content: ""; z-index: 2; webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform: scale(1, 0); -moz-transform: scale(1, 0); -o-transform: scale(1, 0); -ms-transform: scale(1, 0); transform: scale(1, 0); }
-#header .navArea ul li a:after { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; display: block; border: #e8f409 2px solid; border-left: none; border-right: none; content: ""; z-index: 2; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; -webkit-transform: scale(0, 1); -moz-transform: scale(0, 1); -o-transform: scale(0, 1); -ms-transform: scale(0, 1); transform: scale(0, 1); }
-#header .navArea ul li a:hover:before,
-#header .navArea ul li a:hover:after { -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }*/
 .navArea ul li {
   display: inline-block;
   *display: inline;
@@ -1556,16 +1598,7 @@ socialmedia
   font-size: 14px; }
   .socialmedia ul li a.fb:hover {
     background: url("../image/facebook.svg") center center no-repeat, #dbf235;
-    background-size: 30px;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    background-size: 30px; }
 
 .socialmedia ul li a.tw {
   background: url("../image/twitter.svg") center center no-repeat, #51dad0;
@@ -1573,16 +1606,7 @@ socialmedia
   font-size: 14px; }
   .socialmedia ul li a.tw:hover {
     background: url("../image/twitter.svg") center center no-repeat, #dbf235;
-    background-size: 30px;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    background-size: 30px; }
 
 .socialmedia ul li a.yt {
   background: url("../image/youtube.svg") center center no-repeat, #51dad0;
@@ -1590,16 +1614,7 @@ socialmedia
   font-size: 14px; }
   .socialmedia ul li a.yt:hover {
     background: url("../image/youtube.svg") center center no-repeat, #dbf235;
-    background-size: 30px;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    background-size: 30px; }
 
 /* ----- .transition ----- */
 .transition03 {
@@ -1846,12 +1861,14 @@ socialmedia
   color: black;
   background: transparent; }
 
-.try {
+.line {
   display: inline-block;
   *display: inline;
+  line-height: 1.5;
   *zoom: 1; }
 
-.try a {
+.line a {
+  font-size: 1.2rem;
   display: block;
   color: black;
   font-family: "proxima-nova-extra-condensed", sans-serif;
@@ -1862,7 +1879,7 @@ socialmedia
   position: relative;
   overflow: hidden; }
 
-.try a:before {
+.line a:before {
   position: absolute;
   right: 0;
   bottom: 0px;
@@ -1881,14 +1898,14 @@ socialmedia
   -ms-transform: translate(-100%, 0px);
   transform: translate(-100%, 0px); }
 
-.try a:hover:before {
+.line a:hover:before {
   -webkit-transform: translate(0%, 0%);
   -moz-transform: translate(0%, 0%);
   -o-transform: translate(0%, 0%);
   -ms-transform: translate(0%, 0%);
   transform: translate(0%, 0%); }
 
-.try a:after {
+.line a:after {
   position: absolute;
   right: 0;
   top: 0px;
@@ -1907,14 +1924,14 @@ socialmedia
   -ms-transform: translate(100%, 0px);
   transform: translate(100%, 0px); }
 
-.try a:hover:after {
+.line a:hover:after {
   -webkit-transform: translate(0%, 0%);
   -moz-transform: translate(0%, 0%);
   -o-transform: translate(0%, 0%);
   -ms-transform: translate(0%, 0%);
   transform: translate(0%, 0%); }
 
-.try a:hover {
+.line a:hover {
   color: black;
   background: transparent; }
 
@@ -2014,18 +2031,18 @@ label {
     letter-spacing: 0.07em;
     line-height: 1.2;
     font-size: 1.25rem; } }
-.logo0 {
-  width: 48px;
+.logo {
+  width: 50px;
   height: 70px;
   float: left;
-  background: url("../image/logo0.png") no-repeat center left, white;
-  background-size: 200px; }
+  background: url("../image/logo.png") no-repeat center left, white;
+  background-size: 220px; }
 
-@media screen and (min-width: 502px) {
-  .logo0 {
+@media screen and (min-width: 523px) {
+  .logo {
     width: 220px;
-    background: url("../image/logo0.png") no-repeat center center, white;
-    background-size: 200px; } }
+    background: url("../image/logo.png") no-repeat center center, white;
+    background-size: 220px; } }
 #days, #hours, #minutes, #seconds {
   font-size: 2rem;
   float: left; }
@@ -2051,8 +2068,7 @@ label {
 
 .textlink a {
   padding-top: 5px;
-  font-style: oblique;
-  font-size: 1.1rem; }
+  font-size: 1.3rem; }
 
 .note p {
   line-height: 1.5;
