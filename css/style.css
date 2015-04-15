@@ -953,7 +953,7 @@ h4 {
     transition: all .5s ease; }
 
 .program1a {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program1.jpg") no-repeat center center;
+  background: url("../image/program1.jpg") no-repeat center center;
   background-size: cover; }
 
 .program2a {
@@ -961,7 +961,7 @@ h4 {
   background-size: 250px; }
 
 .program3a {
-  background: linear-gradient(rgba(81, 218, 208, 0.7), rgba(81, 218, 208, 0.7)), url("../image/program3.jpg") no-repeat center center;
+  background: url("../image/program3.jpg") no-repeat center center;
   background-size: cover; }
 
 .location1 {
