@@ -128,6 +128,17 @@ p {
   .col3a:last-of-type {
     margin-right: 0; }
 
+.col3b {
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 3rem; }
+  .col3b:last-of-type {
+    margin-right: 0; }
+
 .col2a {
   width: 100%;
   background: transparent;
@@ -276,6 +287,12 @@ p {
     box-sizing: border-box; }
 
   .col3a {
+    width: 22.74%;
+    float: left;
+    margin-right: 3%;
+    box-sizing: border-box; }
+
+  .col3b {
     width: 22.74%;
     float: left;
     margin-right: 3%;
@@ -2098,5 +2115,8 @@ object {
 .vendor {
   padding: 2%;
   background: #dbf235; }
+
+.center {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

@@ -106,6 +106,18 @@ $gut: 3%;
   	margin-right: 0;
 }
 }
+.col3b { 
+    width:100%;
+    height: 100px;
+    background: transparent;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 3rem;
+    &:last-of-type {
+  	margin-right: 0;
+}
+}
 
 // @media screen and (min-width: $global) {
 // 	.col3a { 
@@ -423,6 +435,9 @@ text-align: center;}
   @include grid(3);
 }
 
+.col3b {
+  @include grid(3);
+}
 
 .col4 {
   @include grid(4);
@@ -1909,3 +1924,7 @@ video {
             background: $primary-color;
             // margin-bottom: 2em;
           }
+
+.center {
+		text-align: center;
+}
