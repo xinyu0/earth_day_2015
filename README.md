@@ -1,11 +1,21 @@
 # Earth Day 2015 Redesign
 
-* [Earth Day 2015](http://www.earthday.org/2015)  
+This is the project that I worked on during the UI design class at the Iron Yard.
 
-* [style guide](http://designstyleguide.github.io/)
+Please check out [the current site](http://www.earthday.org/2015), [the redesign] (http://xinyudesign.com/earth_day_2015/), and [the redesign styleguide](http://xinyudesign.com/earth_day_2015_styleguide/) here.
 
-* Day 51: [Earth Day 2015 comps v2](https://github.com/xinyu0/tiy-assignments/tree/master/day_51)
-* Day 50: [Earth Day 2015 comps v1](https://github.com/xinyu0/tiy-assignments/tree/master/day_50)  
-* Day 49: [Earth Day 2015 wireframes](https://github.com/xinyu0/tiy-assignments/tree/master/day_49)  
-* Day 48: [Earth Day 2015 style tiles](https://github.com/xinyu0/tiy-assignments/tree/master/day_48)  
-* Day 47: [kicking off final project_proposal](https://github.com/xinyu0/tiy-assignments/tree/master/day_47)
+So the idea behind the Earth Day 2015 site is to get more people, especially the younger generation, to talk about Earth Day, and get them involved by giving immediate resources that they can act upon such as local event info and leadership guides. 
+
+My goal for the redesign is to make the site super easy to navigate through, get people, especially the younger crowd, excited about Earth Day, and start to think being part of this campaign is fun and interesting.
+
+
+Below you can find all of the working files.
+
+[Proposal](https://github.com/xinyu0/tiy-assignments/tree/master/day_47)  
+[Style tiles](https://github.com/xinyu0/tiy-assignments/tree/master/day_48)  
+[Wireframes](https://github.com/xinyu0/tiy-assignments/tree/master/day_49)  
+[Comps V1](https://github.com/xinyu0/tiy-assignments/tree/master/day_50)  
+[Comps V2](https://github.com/xinyu0/tiy-assignments/tree/master/day_51)
+ 
+
+
