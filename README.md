@@ -8,7 +8,6 @@ So the idea behind the Earth Day 2015 site is to get more people, especially the
 
 My goal for the redesign is to make the site super easy to navigate through, get people, especially the younger crowd, excited about Earth Day, and start to think being part of this campaign is fun and interesting.
 
-
 Below you can find all of the working files.
 
 [Proposal](https://github.com/xinyu0/tiy-assignments/tree/master/day_47)  
